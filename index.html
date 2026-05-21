@@ -12,9 +12,13 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <div class="max-w-5xl mx-auto px-6 pt-4 flex justify-end gap-2">
-        <button id="lang-cz" onclick="switchLanguage('cz')" class="text-xl px-3 py-1.5 rounded-md bg-blue-600 shadow-sm transition filter none">🇨🇿</button>
-        <button id="lang-en" onclick="switchLanguage('en')" class="text-xl px-3 py-1.5 rounded-md bg-white border border-gray-300 shadow-sm transition filter grayscale hover:grayscale-0">🇬🇧</button>
+    <div class="max-w-5xl mx-auto px-6 pt-4 flex justify-end gap-3">
+        <button id="lang-cz" onclick="switchLanguage('cz')" class="text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110">
+            🇨🇿
+        </button>
+        <button id="lang-en" onclick="switchLanguage('en')" class="text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100">
+            🇬🇧
+        </button>
     </div>
 
     <section class="max-w-5xl mx-auto px-6 pt-8 md:pt-12 pb-8">
@@ -583,13 +587,14 @@
 
             const btnCz = document.getElementById('lang-cz');
             const btnEn = document.getElementById('lang-en');
+            
             if (lang === 'cz') {
-                btnCz.className = "text-xl px-3 py-1.5 rounded-md bg-blue-600 shadow-sm transition filter none";
-                btnEn.className = "text-xl px-3 py-1.5 rounded-md bg-white border border-gray-300 shadow-sm transition filter grayscale hover:grayscale-0";
+                btnCz.className = "text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110";
+                btnEn.className = "text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100";
                 document.documentElement.lang = "cs";
             } else {
-                btnEn.className = "text-xl px-3 py-1.5 rounded-md bg-blue-600 shadow-sm transition filter none";
-                btnCz.className = "text-xl px-3 py-1.5 rounded-md bg-white border border-gray-300 shadow-sm transition filter grayscale hover:grayscale-0";
+                btnEn.className = "text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110";
+                btnCz.className = "text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100";
                 document.documentElement.lang = "en";
             }
 
