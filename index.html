@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marek Horák | M365 Automation Specialist & Developer</title>
+    <title>Marek Horák | M365 Automation Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -12,8 +12,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <section class="max-w-5xl mx-auto px-6 py-12 md:py-20">
-        
+    <section class="max-w-5xl mx-auto px-6 pt-12 md:pt-20 pb-8">
         <div class="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
             
             <div class="flex-1 text-center md:text-left">
@@ -27,25 +26,27 @@
                 <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
                     Baví mě propojovat světy IT a běžného provozu. Navrhuji a stavím firemní aplikace 
                     <strong>kompletně od A do Z</strong> s primárním zaměřením na maximální úsporu licenčních nákladů. 
-                    Moje řešení jsou intuitivní, praktická a přinášejí firmám okamžitou hodnotu bez skrytých poplatků.
+                    Moje řešení jsou intuitivní, praktická a přinášejí okamžitou hodnotu bez skrytých poplatků.
                 </p>
 
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Vyberte, co vás zajímá:</p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="Zivotopis_Marek_Horak_CZ.pdf" download="Zivotopis_Marek_Horak_CZ.pdf" 
-                       class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                        Stáhnout mé CV (PDF)
-                    </a>
                     
-                    <a href="AboutMeBussiness.html" 
-                       class="inline-flex items-center justify-center bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5">
+                    <button id="tab-hpp" onclick="switchMode('hpp')" 
+                            class="inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        Hledám zaměstnance (HPP)
+                    </button>
+                    
+                    <button id="tab-ico" onclick="switchMode('ico')" 
+                            class="inline-flex items-center justify-center bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg shadow-sm transition duration-200">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                         Projektová spolupráce (IČO)
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -59,188 +60,210 @@
             <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4 text-center md:text-left">
                 Primární technologie
             </p>
-            
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                
-                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition hover:shadow-md">
+                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                     <img src="Pictures/PowerApps_scalable.svg" alt="Power Apps" class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3">
                     <span class="text-sm font-bold text-gray-700">Power Apps</span>
                 </div>
-
-                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition hover:shadow-md">
+                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                     <img src="Pictures/PowerAutomate_scalable.svg" alt="Power Automate" class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3">
                     <span class="text-sm font-bold text-gray-700">Power Automate</span>
                 </div>
-
-                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition hover:shadow-md">
+                <div class="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                     <img src="Pictures/microsoft-sharepoint.png" alt="SharePoint" class="w-16 h-16 md:w-20 md:h-20 object-contain mb-3">
                     <span class="text-sm font-bold text-gray-700">SharePoint</span>
                 </div>
-
             </div>
         </div>
-
     </section>
 
-    <section class="bg-white border-t border-b border-gray-100 py-16">
-        <div class="max-w-5xl mx-auto px-6">
-            
-            <div class="text-center md:text-left mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                    Kompletní realizace projektů (Od A do Z)
-                </h2>
-                <p class="text-gray-600 max-w-2xl">
-                    Nečekám na pasivní zadání. Menším a středním firmám pomáhám zastřešit celý životní cyklus aplikace tak, aby proces stál minimum lidského úsilí i licenčních poplatků.
+
+    <div id="content-hpp" class="transition-all duration-300">
+        
+        <section class="bg-blue-50 border-t border-b border-blue-100 py-10 text-center">
+            <div class="max-w-3xl mx-auto px-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Máte zájem o stabilní spolupráci na HPP?</h3>
+                <p class="text-gray-600 mb-6 text-sm md:text-base">
+                    Můj kompletní profesní profil, detailní historii pozic a technologický stack najdete přehledně v PDF životopisu.
                 </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-2xl mb-4">🔍</div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">1. Analýza & Data</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Navrhuji řešení od základu. Připravím efektivní datovou strukturu (SharePoint) s ohledem na nula korun za extra licence.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-2xl mb-4">💻</div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">2. Vývoj & Toky</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací na pozadí přes Power Automate.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-2xl mb-4">🧪</div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">3. Uživatelské testy</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Aplikace testuji interně (alfa) i v reálném provozu se zaměstnanci (beta). Řešení jim osobně odprezentuji a zaškolím je.
-                    </p>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-2xl mb-4">🛠️</div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">4. Ladění & Podpora</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Samozřejmostí je pro mě okamžitý debugging, nasazování hotfixů v ostrém provozu a dlouhodobá údržba systémů.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-gray-900 text-white py-16">
-        <div class="max-w-5xl mx-auto px-6">
-            
-            <div class="text-center md:text-left mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
-                    Pokročilé integrace & Optimalizace nákladů
-                </h2>
-                <p class="text-gray-400 max-w-2xl">
-                    Zaměřuji se na řešení, která standardně vyžadují drahé prémiové licence, a stavím je tak, aby koncového uživatele nestála ani korunu navíc.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">💡</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1">Optimalizace licenčních nákladů</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">
-                            Architektura postavená na efektivním využití <em>Connection References</em> a servisních účtů. Eliminuji potřebu prémiových licencí pro koncové zaměstnance.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">📄</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1">Inteligentní vytěžování faktur</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">
-                            Automatizovaný převod PDF faktur do strukturovaných formátů <strong>XML / ISDOC</strong> s využitím AI nástrojů v prostředí M365 nebo přímé integrace cloudové služby 
-                            <a href="https://alice.redque.cz/" target="_blank" class="text-blue-400 hover:text-blue-300 underline decoration-dotted transition font-semibold">ALICE (Redque)</a> přes API.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">🌐</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1">Propojování na státní registry</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">
-                            Automatické vyhledávání a načítání firemních dat z registru <strong>ARES</strong> na základě zadání IČO přímo uvnitř aplikací.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">⚡</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1">Pokročilá manipulace s daty (XPath)</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">
-                            Efektivní dotazování a transformace komplexních XML struktur přímo v Microsoft tocích bez nutnosti mezikroků nebo složitých skriptů.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-5xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            
-            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    🎓 Vzdělání & IT Základ
-                </h2>
-                <ul class="space-y-3 text-gray-600 text-sm md:text-base">
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-600">•</span>
-                        <span><strong>SPŠ Elektrotechnická</strong> – zaměření na Automatizaci.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-600">•</span>
-                        <span>Robustní základy z reálného provozu: správa firemních sítí, hardwaru, Active Directory, DHCP a skupinových politik.</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-                <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 4c0-2.21 1.79-4 4-4h24c2.21 0 4 1.79 4 4v24c0 2.21-1.79 4-4 4H4c-2.21 0-4-1.79-4-4V4z" fill="#00247d"/>
-                        <path d="M19.78 19.78L32 32V25.22L24.78 18h-5zM0 6.78L12.22 19h5L4.78 6.78H0zM32 6.78L19.78 19h-5L27.22 6.78H32zM0 25.22l12.22-12.22h5L4.78 25.22H0z" fill="#fff"/>
-                        <path d="M21.11 21.11L32 32v-2.11L23.22 21.11h-2.11zM0 8.89l10.89 10.89h2.11L2.11 8.89H0zM32 8.89L21.11 21.11h-2.11L29.89 8.89H32zM0 23.11l10.89-10.89h2.11L2.11 23.11H0z" fill="#cf142b"/>
-                        <path d="M12 0h8v32h-8zM0 12h32v8H0z" fill="#fff"/>
-                        <path d="M14 0h4v32h-4zM0 14h32v4H0z" fill="#cf142b"/>
+                <a href="Zivotopis_Marek_Horak_CZ.pdf" download="Zivotopis_Marek_Horak_CZ.pdf" 
+                   class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-200">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                     </svg>
-                    Jazykové Znalosti & Disciplína
-                </h2>
-                <ul class="space-y-3 text-gray-600 text-sm md:text-base">
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-600">•</span>
-                        <span><strong>Angličtina (A2 – B1):</strong> Pasivní znalost zaměřená na plynulé čtení technické dokumentace, psaní kódů a efektivní práci s AI nástroji.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-blue-600">🔥</span>
-                        <span><strong>Každodenní seberozvoj:</strong> Aktuálně držím sérii <strong>přes 1 000 dní v kuse</strong> na platformě Duolingo, což dokazuje moji vnitřní disciplínu a vytrvalost.</span>
-                    </li>
-                </ul>
+                    Stáhnout mé CV (PDF)
+                </a>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="bg-white py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center md:text-left mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Kompletní realizace projektů (Od A do Z)</h2>
+                    <p class="text-gray-600 max-w-2xl">
+                        Nečekám na pasivní zadání. V týmu pomáhám zastřešit celý životní cyklus aplikace tak, aby proces stál minimum lidského úsilí i licenčních poplatků.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="text-blue-600 text-2xl mb-4">🔍</div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">1. Analýza & Data</h3>
+                        <p class="text-sm text-gray-600">Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenáklady za extra licence.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="text-blue-600 text-2xl mb-4">💻</div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">2. Vývoj & Toky</h3>
+                        <p class="text-sm text-gray-600">Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="text-blue-600 text-2xl mb-4">🧪</div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">3. Uživatelské testy</h3>
+                        <p class="text-sm text-gray-600">Aplikace testuji v reálném provozu se zaměstnanci, které osobně zaškolím.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="text-blue-600 text-2xl mb-4">🛠️</div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">4. Ladění & Podpora</h3>
+                        <p class="text-sm text-gray-600">Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba systémů.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 text-white py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center md:text-left mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Pokročilé integrace & Optimalizace nákladů</h2>
+                    <p class="text-gray-400 max-w-2xl">Zaměřuji se na řešení, která standardně vyžadují drahé licence, a stavím je v rámci základního M365 prostředí.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">💡</div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Optimalizace licenčních nákladů</h3>
+                            <p class="text-sm text-gray-400">Využití Connection References a servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">📄</div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Inteligentní vytěžování faktur</h3>
+                            <p class="text-sm text-gray-400">Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a integrace služby ALICE přes API.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">🌐</div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Propojování na státní registry</h3>
+                            <p class="text-sm text-gray-400">Automatické vyhledávání a načítání firemních dat z registru ARES na základě zadání IČO přímo v aplikaci.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">⚡</div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Pokročilá práce s daty (XPath)</h3>
+                            <p class="text-sm text-gray-400">Efektivní transformace komplexních XML struktur přímo v tocích bez nutnosti mezikroků.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">🎓 Vzdělání & IT Základ</h2>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><strong>SPŠ Elektrotechnická</strong> – zaměření na Automatizaci.</li>
+                        <li>Robustní základy: správa firemních sítí, HW, Active Directory, DHCP a skupinových politik.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Jazykové Znalosti & Disciplína</h2>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><strong>Angličtina (A2 – B1):</strong> Pasivní znalost pro čtení dokumentace a psaní kódů.</li>
+                        <li>🔥 <strong>Každodenní seberozvoj:</strong> Přes 1 000 dní v kuse na Duolingu potvrzuje moji disciplínu.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div id="content-ico" class="hidden transition-all duration-300">
+        <section class="bg-white border-t border-b border-gray-100 py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                
+                <div class="text-center md:text-left mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Jak vám mohu pomoci jako externí partner?</h2>
+                    <p class="text-gray-600 max-w-2xl">
+                        Dodávám řešení na klíč bez nutnosti interních úvazků. Zaručuji plnou diskrétnost, bezpečné nakládání s daty a dodržování NDA (smluv o mlčenlivosti).
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-bold text-gray-900 mb-1">Rychlá realizace</h3>
+                        <p class="text-sm text-gray-600">Prezentuji funkční milníky po částech. První testování probíhá už po několika dnech od zadání.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-bold text-gray-900 mb-1">Úspora licencí</h3>
+                        <p class="text-sm text-gray-600">Stavím v rámci základních M365 licencí. Neplatíte měsíční paušály za Dataverse nebo prémiové konektory.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="font-bold text-gray-900 mb-1">Profesionální přístup</h3>
+                        <p class="text-sm text-gray-600">Práce je jasně vykázaná, fakturovaná a krytá smluvními závazky na ochranu vašeho know-how.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-6 text-center md:text-left">Vybrané projekty & Zkušenosti</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                            <h4 class="font-bold text-gray-900 text-lg">Vodárenská akciová společnost a.s.</h4>
+                            <span class="text-xs bg-gray-200 text-gray-700 font-semibold px-2 py-0.5 rounded">6/2018 – Současnost</span>
+                        </div>
+                        <p class="text-sm font-semibold text-blue-600 mb-3">Power Platform Developer & M365 Solution Designer</p>
+                        <ul class="text-sm text-gray-600 space-y-2 list-disc pl-4">
+                            <li><strong>Pilotní projekt Docházky (ANeT):</strong> Kompletní správa a nasazení řešení napříč všemi 6 divizemi společnosti.</li>
+                            <li><strong>Optimalizace licencí:</strong> Přestavba architektury toků pomocí Connection References bez licenčních vícenákladů.</li>
+                            <li><strong>Vytěžování dat:</strong> Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a API rozhraní.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                            <h4 class="font-bold text-gray-900 text-lg">Živnost / Freelance spolupráce</h4>
+                            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2 py-0.5 rounded">7/2024 – Současnost</span>
+                        </div>
+                        <p class="text-sm font-semibold text-blue-600 mb-3">SharePoint & Power Platform Specialist</p>
+                        <p class="text-sm text-gray-600">
+                            Formou externích zakázek pomáhám malým a středním podnikům bezpečně digitalizovat procesy, stavět zakázkové evidence v SharePoint Lists a automatizovat schvalovací toky pod přísným zabezpečením klientského prostředí.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2 mb-1 flex-wrap">
+                            <h4 class="font-bold text-gray-900 text-lg">Zetor Kovárna s.r.o.</h4>
+                            <span class="text-xs bg-gray-200 text-gray-700 font-semibold px-2 py-0.5 rounded">1/2016 – 5/2018</span>
+                        </div>
+                        <p class="text-sm font-semibold text-blue-600 mb-3">Kontrolor kvality & Vývoj interních maker</p>
+                        <p class="text-sm text-gray-600">
+                            Vyvinul jsem zakázkový Excel formulář propojený s bezdrátovou čtečkou čárových kódů, který eliminoval chyby při přepisu a zkrátil čas zaskladňování materiálu.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
 
     <footer class="bg-gray-100 border-t border-gray-200 py-12 text-center">
         <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">Máte proces, který potřebuje zrychlit?</h2>
-            <p class="text-gray-600 mb-8">
-                Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat na pohovoru.
+            <h2 id="footer-title" class="text-2xl font-bold text-gray-900 mb-2">Máte proces, který potřebuje zrychlit?</h2>
+            <p id="footer-desc" class="text-gray-600 mb-8">
+                Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-700 font-semibold mb-6">
@@ -254,6 +277,46 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        function switchMode(mode) {
+            const tabHpp = document.getElementById('tab-hpp');
+            const tabIco = document.getElementById('tab-ico');
+            const contentHpp = document.getElementById('content-hpp');
+            const contentIco = document.getElementById('content-ico');
+            const footerTitle = document.getElementById('footer-title');
+            const footerDesc = document.getElementById('footer-desc');
+
+            if (mode === 'hpp') {
+                // Aktivní vzhled pro HPP tlačítko
+                tabHpp.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
+                // Pasivní vzhled pro IČO tlačítko
+                tabIco.className = "inline-flex items-center justify-center bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg shadow-sm transition duration-200";
+                
+                // Zobrazení obsahu
+                contentHpp.classList.remove('hidden');
+                contentIco.classList.add('hidden');
+
+                // Úprava textů v patičce pro HPP
+                footerTitle.innerText = "Máte proces, který potřebuje zrychlit?";
+                footerDesc.innerText = "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat na pohovoru.";
+
+            } else if (mode === 'ico') {
+                // Pasivní vzhled pro HPP tlačítko
+                tabHpp.className = "inline-flex items-center justify-center bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg shadow-sm transition duration-200";
+                // Aktivní vzhled pro IČO tlačítko
+                tabIco.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
+                
+                // Zobrazení obsahu
+                contentHpp.classList.add('hidden');
+                contentIco.classList.remove('hidden');
+
+                // Úprava textů v patičce pro IČO
+                footerTitle.innerText = "Potřebujete zrealizovat projekt na klíč?";
+                footerDesc.innerText = "Hledáte externího specialistu na optimalizaci M365 licencí nebo automatizaci procesů? Ozvěte se, probereme zadání.";
+            }
+        }
+    </script>
 
 </body> 
 </html>
