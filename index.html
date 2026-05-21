@@ -13,11 +13,11 @@
 <body class="bg-gray-50 text-gray-800">
 
     <div class="max-w-5xl mx-auto px-6 pt-4 flex justify-end gap-3">
-        <button id="lang-cz" onclick="switchLanguage('cz')" class="text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110">
-            🇨🇿
+        <button id="lang-cz" onclick="switchLanguage('cz')" class="w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0">
+            <img src="https://flagcdn.com/w40/cz.png" alt="CZ" class="w-full h-full object-cover">
         </button>
-        <button id="lang-en" onclick="switchLanguage('en')" class="text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100">
-            🇬🇧
+        <button id="lang-en" onclick="switchLanguage('en')" class="w-10 h-10 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100 overflow-hidden flex items-center justify-center p-0">
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="w-full h-full object-cover">
         </button>
     </div>
 
@@ -35,7 +35,7 @@
                 <p id="hero-p" class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
                     Baví mě propojovat světy IT a běžného provozu. Navrhuji a stavím firemní aplikace 
                     <strong>kompletně od A do Z</strong> s primárním zaměřením na maximální úsporu licenčních nákladů. 
-                    Moje řešení jsou intuitivní, praktická a přinášejí okamžitou hodnotu bez skrytých poplatků.
+                    Moje řešení jsou intuitivní, practical a přinášejí okamžitou hodnotu bez skrytých poplatků.
                 </p>
 
                 <p id="coop-title" class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Vyberte formu spolupráce:</p>
@@ -114,7 +114,7 @@
                 <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                     <div class="text-xl mb-2">🤝</div>
                     <h3 id="f1-title" class="font-bold text-gray-900 mb-1">Komunikace s byznysem</h3>
-                    <p id="f1-desc" class="text-sm text-gray-600">Dokážu si sednout s lidmi z provozu, pochopit jejich reálný problém a přeložit ho do efektivního technického řešení.</p>
+                    <p id="f1-desc" class="text-sm text-gray-600">Dokážu si sednout s lidmi z provozu, pochopit their reálný problém a přeložit ho do efektivního technického řešení.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                     <div class="text-xl mb-2">📉</div>
@@ -246,7 +246,7 @@
                     <h4 id="case2-title" class="font-bold text-gray-900 text-lg mb-1">Vytěžení faktury (PDF) pomocí AI Copilot nebo externí služby ALICE</h4>
                     <p id="case2-subtitle" class="text-sm text-blue-600 font-semibold mb-3">Enterprise řešení pro střední podnik</p>
                     <p id="case2-desc" class="text-sm text-gray-600">
-                        Kompletní návrh a transformace faktury z PDF do formátu pro účetní sysémy (XML/ISDOC) např. Pohoda. Možnost vytěžení pomocí REST API službou ALICE nebo vestavěnou formou Copilot AI. Nutnost prémiové licence pro servisní účet (uživatelé prémiovou licenci nepotřebují - optimalizace firemních nákladů).
+                        Kompletní návrh a transformace faktury z PDF do formátu pro účetní systémy (XML/ISDOC) např. Pohoda. Možnost vytěžení pomocí REST API službou ALICE nebo vestavěnou formou Copilot AI. Nutnost prémiové licence pro servisní účet (uživatelé prémiovou licenci nepotřebují - optimalizace firemních nákladů).
                     </p>
                 </div>
 
@@ -308,7 +308,7 @@
                     <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">💡</div>
                     <div>
                         <h3 id="adv1-title" class="font-bold text-lg mb-1">Optimalizace licenčních nákladů</h3>
-                        <p id="adv1-desc" class="text-sm text-gray-400">Využití Connection References and servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele.</p>
+                        <p id="adv1-desc" class="text-sm text-gray-400">Využití Connection References a servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele.</p>
                     </div>
                 </div>
                 <div class="flex gap-4 items-start">
@@ -430,15 +430,9 @@
                 case2Subtitle: "Enterprise řešení pro střední podnik",
                 case2Desc: "Kompletní návrh a transformace faktury z PDF do formátu pro účetní systémy (XML/ISDOC) např. Pohoda. Možnost vytěžení pomocí REST API službou ALICE nebo vestavěnou formou Copilot AI. Nutnost prémiové licence pro servisní účet (uživatelé prémiovou licenci nepotřebují - optimalizace firemních nákladů).",
                 
-                // Dlouhodobá spolupráce box (Aktualizováno)
-                coopFutureText: `
-                    💡 <strong>Dlouhodobé partnerství:</strong> S klíčovým klientem spolupracuji dlouhodobě. Jeho aplikace nenechávám „u ledu“, ale podle měnících se potřeb byznysu je postupně aktualizuji a rozšiřuji o nové moduly. Propojený ekosystém dnes spolehlivě zastřešuje:
-                `,
-                coopFutureList: `
-                    <li>Komplexní proces schvalování a oběhu faktur</li>
-                    <li>Systém pro sdílené bookování pracovních míst a firemních vozidel</li>
-                    <li>Interní nástroj pro sledování, hodnocení a dodržování auditů (BOZP, 5S, ...)</li>
-                `,
+                // Dlouhodobá spolupráce box
+                coopFutureText: "💡 <strong>Dlouhodobé partnerství:</strong> S klíčovým klientem spolupracuji dlouhodobě. Jeho aplikace nenechávám „u ledu“, ale podle měnících se potřeb byznysu je postupně aktualizuji a rozšiřuji o nové moduly. Propojený ekosystém dnes spolehlivě zastřešuje:",
+                coopFutureList: "<li>Komplexní proces schvalování a oběhu faktur</li><li>Systém pro sdílené bookování pracovních míst a firemních vozidel</li><li>Interní nástroj pro sledování, hodnocení a dodržování auditů (BOZP, 5S, ...)</li>",
 
                 // Společné sekce spodní
                 stepsMainTitle: "Kompletní realizace projektů (Od A do Z)",
@@ -463,7 +457,6 @@
                 adv4Title: "Pokročilá práce s daty (XPath)",
                 adv4Desc: "Efektivní transformace komplexních XML struktur přímo v tocích bez nutnosti mezikroků.",
                 
-                // Footery podle režimu
                 footerTitleHpp: "Máte proces, který potřebuje zrychlit?",
                 footerDescHpp: "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat na pohovoru.",
                 footerTitleIco: "Potřebujete zrealizovat projekt na klíč?",
@@ -539,15 +532,9 @@
                 case2Subtitle: "Enterprise solution for mid-sized business",
                 case2Desc: "Complete design and transformation of invoices from PDF to accounting system formats (XML/ISDOC), e.g., Pohoda. Extraction capabilities via REST API with ALICE or natively via Copilot AI. Premium license required only for the service account (end-users do not need premium licenses – optimizing corporate expenses).",
                 
-                // Dlouhodobá spolupráce box EN (Aktualizováno)
-                coopFutureText: `
-                    💡 <strong>Long-term Partnership:</strong> I build long-term relationships with a key corporate partner. I don't just leave apps as abandonware; based on evolving business needs, I systematically update them and expand them with new modules. This connected ecosystem now reliably covers:
-                `,
-                coopFutureList: `
-                    <li>Comprehensive invoice approval and routing process</li>
-                    <li>A shared booking system for workspaces and corporate vehicles</li>
-                    <li>An internal tool for tracking, evaluating, and maintaining audits (OSH, 5S, ...)</li>
-                `,
+                // Dlouhodobá spolupráce box EN
+                coopFutureText: "💡 <strong>Long-term Partnership:</strong> I build long-term relationships with a key corporate partner. I don't just leave apps as abandonware; based on evolving business needs, I systematically update them and expand them with new modules. This connected ecosystem now reliably covers:",
+                coopFutureList: "<li>Comprehensive invoice approval and routing process</li><li>A shared booking system for workspaces and corporate vehicles</li><li>An internal tool for tracking, evaluating, and maintaining audits (OSH, 5S, ...)</li>",
 
                 // Společné sekce spodní
                 stepsMainTitle: "End-to-End Project Delivery (From A to Z)",
@@ -572,7 +559,6 @@
                 adv4Title: "Advanced Data Manipulation (XPath)",
                 adv4Desc: "Efficient transformation of complex XML structures directly within flows without intermediate steps.",
                 
-                // Footery podle režimu
                 footerTitleHpp: "Do you have a process that needs speeding up?",
                 footerDescHpp: "Are you looking for an independent professional to design and deliver a solution from A to Z? Let's meet for an interview.",
                 footerTitleIco: "Need a turnkey project delivered?",
@@ -589,12 +575,12 @@
             const btnEn = document.getElementById('lang-en');
             
             if (lang === 'cz') {
-                btnCz.className = "text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110";
-                btnEn.className = "text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100";
+                btnCz.className = "w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0";
+                btnEn.className = "w-10 h-10 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100 overflow-hidden flex items-center justify-center p-0";
                 document.documentElement.lang = "cs";
             } else {
-                btnEn.className = "text-2xl p-2 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110";
-                btnCz.className = "text-2xl p-2 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100";
+                btnEn.className = "w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0";
+                btnCz.className = "w-10 h-10 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100 overflow-hidden flex items-center justify-center p-0";
                 document.documentElement.lang = "en";
             }
 
@@ -645,7 +631,7 @@
             document.getElementById('ico-f3-desc').innerText = data.icoF3Desc;
             document.getElementById('cases-title').innerText = data.casesTitle;
             
-            // Nový case (Recepce)
+            // Case 3 (Recepce)
             document.getElementById('case3-title').innerText = data.case3Title;
             document.getElementById('case3-badge').innerText = data.case3Badge;
             document.getElementById('case3-p1').innerHTML = data.case3P1;
@@ -661,7 +647,7 @@
             document.getElementById('case2-subtitle').innerText = data.case2Subtitle;
             document.getElementById('case2-desc').innerText = data.case2Desc;
             
-            // Dlouhodobá spolupráce box (Aktualizováno)
+            // Dlouhodobá spolupráce box
             document.getElementById('coop-future-text').innerHTML = data.coopFutureText;
             document.getElementById('coop-future-list').innerHTML = data.coopFutureList;
 
