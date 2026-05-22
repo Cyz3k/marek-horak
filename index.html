@@ -204,7 +204,7 @@
                 </div>
                 <div class="border-l-4 border-blue-600 pl-4">
                     <h3 id="ico-f3-title" class="font-bold text-gray-900 mb-1">Profesionální přístup</h3>
-                    <p id="ico-f3-desc" class="text-sm text-gray-600">Práce je jasně vykazovaná, fakturovaná a krytá smluvními závazky na ochranu vašeho firemního know-how.</p>
+                    <p id="ico-f3-desc" class="text-sm text-gray-600">Práce is jasně vykazovaná, fakturovaná a krytá smluvními závazky na ochranu vašeho firemního know-how.</p>
                 </div>
             </div>
 
@@ -277,7 +277,7 @@
             <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <div class="text-blue-600 text-2xl mb-4">🔍</div>
                 <h3 id="step1-title" class="font-bold text-lg text-gray-900 mb-2">1. Analýza &amp; Data</h3>
-                <p id="step1-desc" class="text-sm text-gray-600">Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenáklady za extra licence.</p>
+                <p id="step1-desc" class="text-sm text-gray-600">Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenance za extra licence.</p>
             </div>
             <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
                 <div class="text-blue-600 text-2xl mb-4">💻</div>
@@ -338,19 +338,27 @@
 
 
     <footer class="bg-gray-100 border-t border-gray-200 py-16 text-center">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-5xl mx-auto px-6">
             <h2 id="footer-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Máte proces, který potřebuje zrychlit?</h2>
             <p id="footer-desc" class="text-gray-600 mb-10 text-base md:text-lg">
                 Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.
             </p>
             
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 mb-6">
-                <a href="mailto:marek.mh.horak@gmail.com" class="hover:text-blue-600 transition flex items-center gap-2">📧 marek.mh.horak@gmail.com</a>
-                <a href="tel:+420777212182" class="hover:text-blue-600 transition flex items-center gap-2">📞 +420 777 212 182</a>
-                <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2">🔗 LinkedIn</a>
-                <span id="footer-ico-block" class="text-gray-600 font-medium whitespace-nowrap bg-blue-50 border border-blue-200 px-3 py-1 rounded-md" style="display: none;">
-                    💼 <span id="footer-ico">IČO: 21860785</span>
-                </span>
+            <div id="footer-contacts-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 max-w-4xl mx-auto items-center justify-center">
+                <div class="flex justify-center">
+                    <a href="mailto:marek.mh.horak@gmail.com" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">📧 marek.mh.horak@gmail.com</a>
+                </div>
+                <div class="flex justify-center">
+                    <a href="tel:+420777212182" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">📞 +420 777 212 182</a>
+                </div>
+                <div class="flex justify-center">
+                    <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">🔗 LinkedIn</a>
+                </div>
+                <div id="footer-ico-block" class="justify-center hidden">
+                    <span class="text-gray-600 font-medium whitespace-nowrap bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-md flex items-center gap-2">
+                        💼 <span id="footer-ico">IČO: 21860785</span>
+                    </span>
+                </div>
             </div>
             
             <p id="footer-rights" class="text-xs text-gray-400 mt-12">
@@ -706,6 +714,7 @@
             const contentHpp = document.getElementById('content-hpp');
             const contentIco = document.getElementById('content-ico');
             const footerIcoBlock = document.getElementById('footer-ico-block');
+            const contactsGrid = document.getElementById('footer-contacts-grid');
 
             if (mode === 'hpp') {
                 tabHpp.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
@@ -713,14 +722,22 @@
                 
                 contentHpp.classList.remove('hidden');
                 contentIco.classList.add('hidden');
-                footerIcoBlock.style.display = 'none'; // Skryje IČO blok v HPP záložce
+                
+                // Skrytí IČO a úprava gridu na 3 sloupce pro perfektní symetrii
+                footerIcoBlock.classList.remove('flex');
+                footerIcoBlock.classList.add('hidden');
+                contactsGrid.className = "grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 max-w-4xl mx-auto items-center justify-center";
             } else if (mode === 'ico') {
                 tabHpp.className = "inline-flex items-center justify-center bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg shadow-sm transition duration-200";
                 tabIco.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
                 
                 contentHpp.classList.add('hidden');
                 contentIco.classList.remove('hidden');
-                footerIcoBlock.style.display = 'inline-block'; // Zobrazí IČO blok v IČO záložce
+                
+                // Zobrazení IČO a rozšíření gridu na 4 sloupce
+                footerIcoBlock.classList.remove('hidden');
+                footerIcoBlock.classList.add('flex');
+                contactsGrid.className = "grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 max-w-5xl mx-auto items-center justify-center";
             }
 
             updateFooterText();
