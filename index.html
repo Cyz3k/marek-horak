@@ -141,7 +141,7 @@
                     <ul id="exp1-list" class="text-sm text-gray-600 space-y-2 list-disc pl-4">
                         <li><strong>Projektový manažer - projekt Docházky:</strong> Po úspěšném uskutečnění pilotního projektu pro jednu divizi následovalo kompletní nasazení řešení napříč všemi 7 divizemi společnosti.</li>
                         <li><strong>Optimalizace licencí:</strong> Přestavba architektury toků pomocí Connection References bez licenčních vícenákladů.</li>
-                        <li><strong>Vytěžování dat:</strong> Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a API rozhraní.</li>
+                        <li><strong>Vytěžování dat:</strong> Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI and API rozhraní.</li>
                         <li><strong>Tvorba interních nástrojů - Objednávky:</strong> Vývoj objednávkového SW s podpisovým modulem. Výsledek je objednávkový digitální dokument ve formě PDF.</li>
                         <li><strong>Tvorba interních nástrojů - Digitalizace protokolů:</strong> Vývoj digitalizace papírových protokolů do jednotné formy pro zákazníky ve formě PDF.</li>
                         <li><strong>Tvorba interních nástrojů - Objednání tonerů:</strong> Vývoj interního nástroje pro pohodlné objednání tonerů pro tiskárny. Automatické posílání dodavateli s adresou doručení (objednávka komponentů ve formě PDF).</li>
@@ -246,7 +246,7 @@
                     <h4 id="case2-title" class="font-bold text-gray-900 text-lg mb-1">Vytěžení faktury (PDF) pomocí AI Copilot nebo externí služby ALICE</h4>
                     <p id="case2-subtitle" class="text-sm text-blue-600 font-semibold mb-3">Enterprise řešení pro střední podnik</p>
                     <p id="case2-desc" class="text-sm text-gray-600">
-                        Kompletní návrh a transformace faktury z PDF do formátu pro účetní systémy (XML/ISDOC) např. Pohoda. Možnost vytěžení pomocí REST API službou ALICE nebo vestavěnou formou Copilot AI. Nutnost prémiové licence pro servisní účet (uživatelé prémiovou licenci nepotřebují - optimalizace firemních nákladů).
+                        Kompletní návrh a transformace faktury z PDF do formátu pro účetní sysémy (XML/ISDOC) např. Pohoda. Možnost vytěžení pomocí REST API službou ALICE nebo vestavěnou formou Copilot AI. Nutnost prémiové licence pro servisní účet (uživatelé prémiovou licenci nepotřebují - optimalizace firemních nákladů).
                     </p>
                 </div>
 
@@ -337,21 +337,23 @@
     </section>
 
 
-    <footer class="bg-gray-100 border-t border-gray-200 py-12 text-center">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 id="footer-title" class="text-2xl font-bold text-gray-900 mb-2">Máte proces, který potřebuje zrychlit?</h2>
-            <p id="footer-desc" class="text-gray-600 mb-8">
+    <footer class="bg-gray-100 border-t border-gray-200 py-16 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 id="footer-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Máte proces, který potřebuje zrychlit?</h2>
+            <p id="footer-desc" class="text-gray-600 mb-10 text-base md:text-lg">
                 Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-700 font-semibold mb-6">
-                <a href="mailto:marek.mh.horak@gmail.com" class="hover:text-blue-600 transition">📧 marek.mh.horak@gmail.com</a>
-                <a href="tel:+420777212182" class="hover:text-blue-600 transition">📞 +420 777 212 182</a>
-                <span id="footer-ico" class="text-gray-500 font-normal">💼 IČO: [Doplňte vaše IČO]</span>
-                <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition">🔗 LinkedIn</a>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 mb-6">
+                <a href="mailto:marek.mh.horak@gmail.com" class="hover:text-blue-600 transition flex items-center gap-2">📧 marek.mh.horak@gmail.com</a>
+                <a href="tel:+420777212182" class="hover:text-blue-600 transition flex items-center gap-2">📞 +420 777 212 182</a>
+                <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2">🔗 LinkedIn</a>
+                <span id="footer-ico-block" class="text-gray-600 font-medium whitespace-nowrap bg-blue-50 border border-blue-200 px-3 py-1 rounded-md" style="display: none;">
+                    💼 <span id="footer-ico">IČO: 21860785</span>
+                </span>
             </div>
             
-            <p id="footer-rights" class="text-xs text-gray-400 mt-8">
+            <p id="footer-rights" class="text-xs text-gray-400 mt-12">
                 © 2026 Marek Horák. Všechna práva vyhrazena. | Hostováno na GitHub Pages
             </p>
         </div>
@@ -439,7 +441,7 @@
                 stepsMainTitle: "Kompletní realizace projektů (Od A do Z)",
                 stepsMainDesc: "Pomáhám zastřešit celý životní cyklus aplikace tak, aby proces stál minimum lidského úsilí i licenčních poplatků.",
                 step1Title: "1. Analýza & Data",
-                step1Desc: "Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenance za extra licence.",
+                step1Desc: "Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenáklady za extra licence.",
                 step2Title: "2. Vývoj & Toky",
                 step2Desc: "Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate.",
                 step3Title: "3. Uživatelské testy",
@@ -462,7 +464,7 @@
                 footerDescHpp: "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat na pohovoru.",
                 footerTitleIco: "Potřebujete zrealizovat projekt na klíč?",
                 footerDescIco: "Hledáte externího specialistu na optimalizaci M365 licencí nebo automatizaci procesů? Ozvěte se, probereme zadání.",
-                footerIcoText: "💼 IČO: [Doplňte vaše IČO]",
+                footerIcoText: "IČO: 21860785",
                 footerRights: "© 2026 Marek Horák. Všechna práva vyhrazena. | Hostováno na GitHub Pages"
             },
             en: {
@@ -520,7 +522,7 @@
                 case3Title: "Internal Visitor Management & Reception Application",
                 case3Badge: "Power Apps & Automate",
                 case3P1: "<strong>Requirements & Security:</strong> Development of a streamlined system for coordinating appointments across multiple company branches/locations. Strict access separation was required – receptionists at a specific location can only see appointments for their branch, while standard employees have access exclusively to their own scheduled meetings.",
-                case3P2: "Live Operation:</strong> The reception desk has an immediate daily overview of expected guests. As soon as a business partner arrives, the receptionist checks them in as 'In the Building' with a single click. An automated flow instantly triggers in the background, sending an email/Teams alert to the host that their visitor has arrived.",
+                case3P2: "<strong>Live Operation:</strong> The reception desk has an immediate daily overview of expected guests. As soon as a business partner arrives, the receptionist checks them in as 'In the Building' with a single click. An automated flow instantly triggers in the background, sending an email/Teams alert to the host that their visitor has arrived.",
                 
                 // Case 1 (Připomínání) EN
                 case1Title: "Intelligent Multilingual Reminders (Design Approval)",
@@ -565,7 +567,7 @@
                 footerDescHpp: "Are you looking for an independent professional to design and deliver a solution from A to Z? Let's meet for an interview.",
                 footerTitleIco: "Need a turnkey project delivered?",
                 footerDescIco: "Looking for an external specialist for M365 license optimization or process automation? Get in touch, let's discuss your specs.",
-                footerIcoText: "💼 ID: [Insert your ID/Reg. Number]",
+                footerIcoText: "VAT ID: 21860785",
                 footerRights: "© 2026 Marek Horák. All rights reserved. | Hosted on GitHub Pages"
             }
         };
@@ -703,6 +705,7 @@
             const tabIco = document.getElementById('tab-ico');
             const contentHpp = document.getElementById('content-hpp');
             const contentIco = document.getElementById('content-ico');
+            const footerIcoBlock = document.getElementById('footer-ico-block');
 
             if (mode === 'hpp') {
                 tabHpp.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
@@ -710,12 +713,14 @@
                 
                 contentHpp.classList.remove('hidden');
                 contentIco.classList.add('hidden');
+                footerIcoBlock.style.display = 'none'; // Skryje IČO blok v HPP záložce
             } else if (mode === 'ico') {
                 tabHpp.className = "inline-flex items-center justify-center bg-white border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg shadow-sm transition duration-200";
                 tabIco.className = "inline-flex items-center justify-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 border-2 border-blue-600";
                 
                 contentHpp.classList.add('hidden');
                 contentIco.classList.remove('hidden');
+                footerIcoBlock.style.display = 'inline-block'; // Zobrazí IČO blok v IČO záložce
             }
 
             updateFooterText();
