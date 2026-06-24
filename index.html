@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-12">
+    <section id="projects-section" class="max-w-5xl mx-auto px-6 py-12">
         <h3 id="projects-title" class="text-xl font-bold text-gray-900 mb-6 text-center md:text-left">Ukázky realizovaných business automatizací</h3>
         <div id="projects-container" class="space-y-6">
             <!-- Dynamically filled by JS -->
@@ -333,6 +333,15 @@
                 footerLinksContainer.classList.remove('hidden');
                 document.getElementById('footer-link-hpp').innerHTML = content.links.link_hpp_text;
                 document.getElementById('footer-link-b2b').innerHTML = content.links.link_b2b_text;
+            }
+
+            // Hide projects section if in HPP view
+            const projectsSection = document.getElementById('projects-section');
+            if (view === 'hpp') {
+                projectsSection.classList.add('hidden');
+            } else {
+                // Ensure it's visible for 'b2b' and 'all'
+                projectsSection.classList.remove('hidden');
             }
 
             // Hide view switcher if not in 'all' mode
