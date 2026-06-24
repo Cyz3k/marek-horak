@@ -316,8 +316,8 @@
             // --- Footer ---
             document.getElementById('footer-title').innerHTML = content.footer.title;
             const footerDescKey = `description_${view}`;
-            document.getElementById('footer-desc').innerHTML = content.footer[footerDescKey] || content.footer.description_all;
-            document.getElementById('footer-rights').innerHTML = content.footer.rights;
+            document.getElementById('footer-desc').innerHTML = content.footer[footerDescKey] || content.footer.description_all; // This is correct
+            document.getElementById('footer-rights').innerHTML = content.links.rights;
 
             // --- UI State ---
             const headerIcoBlock = document.getElementById('ico-header-block');
@@ -331,8 +331,8 @@
 
             if (view === 'all') {
                 footerLinksContainer.classList.remove('hidden');
-                document.getElementById('footer-link-hpp').innerHTML = content.footer.link_hpp_text;
-                document.getElementById('footer-link-b2b').innerHTML = content.footer.link_b2b_text;
+                document.getElementById('footer-link-hpp').innerHTML = content.links.link_hpp_text;
+                document.getElementById('footer-link-b2b').innerHTML = content.links.link_b2b_text;
             }
 
             // Hide view switcher if not in 'all' mode
