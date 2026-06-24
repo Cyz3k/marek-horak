@@ -213,7 +213,8 @@
                 const content = allContent[lang];
                 renderContent(content, view);
             } catch (error) {
-                console.error('Error fetching or parsing content:', error);
+                // Log the specific error to the console for better debugging
+                console.error('Nepodařilo se načíst nebo zpracovat obsah. Chyba:', error);
                 document.body.innerHTML = 'Error loading page content.';
             }
         }
