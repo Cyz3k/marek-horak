@@ -1,0 +1,132 @@
+{
+  "cz": {
+    "pageTitle": "Marek Horák | M365 Automation Specialist",
+    "hero": {
+      "title": "Marek Horák",
+      "subtitle": "M365 Automation Specialist & Developer",
+      "description": "Baví mě propojovat světy IT a běžného provozu. Navrhuji a stavím firemní aplikace <strong>kompletně od A do Z</strong> s primárním zaměřením na maximální úsporu licenčních nákladů. Moje řešení jsou intuitivní, praktická a přinášejí okamžitou hodnotu bez skrytých poplatků."
+    },
+    "cooperation": {
+      "title": "Vyberte formu spolupráce:",
+      "hpp": "Hledám zaměstnance (HPP)",
+      "b2b": "Projektová spolupráce (IČO)"
+    },
+    "technologies": {
+      "title": "Primární technologie"
+    },
+    "experience": [
+      {
+        "view": "hpp",
+        "company": "Vodárenská akciová společnost a.s.",
+        "period": "6/2018 – Současnost",
+        "position": "Power Platform Developer & M365 Solution Designer",
+        "tasks": [
+          "<strong>Projektový manažer - projekt Docházky:</strong> Po úspěšném uskutečnění pilotního projektu pro jednu divizi následovalo kompletní nasazení řešení napříč všemi 7 divizemi společnosti.",
+          "<strong>Optimalizace licencí:</strong> Přestavba architektury toků pomocí Connection References bez licenčních vícenákladů.",
+          "<strong>Vytěžování dat:</strong> Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a API rozhraní.",
+          "<strong>Tvorba interních nástrojů:</strong> Vývoj SW pro objednávky, digitalizaci protokolů, objednání tonerů a nástup zaměstnanců."
+        ]
+      },
+      {
+        "view": "all",
+        "company": "Živnost / Freelance spolupráce",
+        "period": "7/2024 – Současnost",
+        "position": "SharePoint & Power Platform Specialist",
+        "description": "Formou externích zakázek pomáhám malým podnikům bezpečně digitalizovat procesy, stavět zakázkové evidence v SharePoint Lists a automatizovat schvalovací toky pod přísným zabezpečením klientského prostředí."
+      }
+    ],
+    "projects": [
+      {
+        "view": "b2b",
+        "title": "Interní aplikace pro správu návštěv a recepce",
+        "badge": "Power Apps & Automate",
+        "description": "Vývoj přehledného systému pro koordinaci schůzek na různých firemních pobočkách s přísným oddělením přístupů. Recepce má okamžitý přehled a hostitel je automaticky notifikován (Email/Teams) o příchodu návštěvy."
+      },
+      {
+        "view": "b2b",
+        "title": "Inteligentní multijazyčné připomínání (Schvalování designu)",
+        "badge": "Úspora 10+ hodin manažera / měsíc",
+        "description": "Automatizované flow v Power Automate, které samo hlídá schvalovací lhůty, rozpozná jazyk klienta (CZ/EN) a připraví koncept urgence. Řeší i případy jako automatické odpovědi o dovolené."
+      },
+      {
+        "view": "all",
+        "title": "Vytěžení faktury (PDF) pomocí AI",
+        "badge": "Enterprise řešení",
+        "description": "Kompletní návrh a transformace faktury z PDF do formátu XML/ISDOC pro účetní systémy (např. Pohoda). Řešení využívá REST API služby ALICE nebo Copilot AI s optimalizací licenčních nákladů (prémiová licence je třeba jen pro servisní účet)."
+      }
+    ],
+    "footer": {
+      "title": "Máte proces, který potřebuje zrychlit?",
+      "description_hpp": "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.",
+      "description_b2b": "Hledáte externího specialistu na optimalizaci M365 licencí nebo automatizaci procesů? Ozvěte se, probereme zadání.",
+      "description_all": "Hledáte do týmu samostatného člověka, nebo externího specialistu na automatizaci? Pojďme se potkat a probrat možnosti.",
+      "ico": "IČO: 21860785",
+      "rights": "© 2026 Marek Horák. Všechna práva vyhrazena. | Hostováno na GitHub Pages"
+    }
+  },
+  "en": {
+    "pageTitle": "Marek Horák | M365 Automation Specialist",
+    "hero": {
+      "title": "Marek Horák",
+      "subtitle": "M365 Automation Specialist & Developer",
+      "description": "I enjoy bridging the worlds of IT and daily business operations. I design and build corporate applications <strong>from A to Z</strong> with a primary focus on maximizing license cost savings. My solutions are intuitive, practical, and deliver immediate value without hidden fees."
+    },
+    "cooperation": {
+      "title": "Select cooperation format:",
+      "hpp": "Full-Time Employee",
+      "b2b": "Project Cooperation (B2B)"
+    },
+    "technologies": {
+      "title": "Primary Technologies"
+    },
+    "experience": [
+      {
+        "view": "hpp",
+        "company": "Vodárenská akciová společnost a.s.",
+        "period": "6/2018 – Present",
+        "position": "Power Platform Developer & M365 Solution Designer",
+        "tasks": [
+          "<strong>Project Manager - Attendance System:</strong> Following a successful pilot project, led the full deployment across all 7 company divisions.",
+          "<strong>License Optimization:</strong> Rebuilt flow architecture using Connection References to avoid additional licensing costs.",
+          "<strong>Data Extraction:</strong> Automated conversion of PDF invoices into XML/ISDOC structures using AI and REST APIs.",
+          "<strong>Internal Tools Development:</strong> Created software for orders, protocol digitalization, toner ordering, and employee onboarding."
+        ]
+      },
+      {
+        "view": "all",
+        "company": "Freelance / B2B Cooperation",
+        "period": "7/2024 – Present",
+        "position": "SharePoint & Power Platform Specialist",
+        "description": "Through external contracts, I help small businesses securely digitalize processes, build custom tracking systems in SharePoint Lists, and automate approval workflows under strict client environment security."
+      }
+    ],
+    "projects": [
+      {
+        "view": "b2b",
+        "title": "Internal Visitor Management & Reception App",
+        "badge": "Power Apps & Automate",
+        "description": "Developed a streamlined system for coordinating appointments across branches with strict access separation. Reception gets an instant overview, and hosts are automatically notified (Email/Teams) upon visitor arrival."
+      },
+      {
+        "view": "b2b",
+        "title": "Intelligent Multilingual Reminders (Design Approval)",
+        "badge": "Saves 10+ manager hours/month",
+        "description": "An automated Power Automate flow that tracks approval deadlines, detects client language (CZ/EN), and drafts reminder emails. It also handles cases like out-of-office auto-replies."
+      },
+      {
+        "view": "all",
+        "title": "Invoice Extraction (PDF) using AI",
+        "badge": "Enterprise Solution",
+        "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI, with optimized licensing (premium license needed only for a service account)."
+      }
+    ],
+    "footer": {
+      "title": "Do you have a process that needs speeding up?",
+      "description_hpp": "Looking for an independent team member who can design and deliver an end-to-end solution? Let's connect.",
+      "description_b2b": "Looking for an external specialist for M365 license optimization or process automation? Get in touch to discuss your needs.",
+      "description_all": "Looking for a full-time team member or an external specialist for automation? Let's connect and discuss the possibilities.",
+      "ico": "VAT ID: 21860785",
+      "rights": "© 2026 Marek Horák. All rights reserved. | Hosted on GitHub Pages"
+    }
+  }
+}
