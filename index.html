@@ -219,7 +219,7 @@
 
         async function fetchContent(lang, view) {
             try {
-                const response = await fetch('obsah.json');
+                const response = await fetch(`obsah.json?v=${new Date().getTime()}`);
                 const allContent = await response.json();
                 const content = allContent[lang];
                 renderContent(content, view);
