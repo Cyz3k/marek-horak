@@ -11,6 +11,12 @@
       "hpp": "Hledám zaměstnance (HPP)",
       "b2b": "Projektová spolupráce (IČO)"
     },
+    "cv_section": {
+      "title": "Máte zájem o stabilní spolupráci na HPP?",
+      "description": "Můj kompletní profesní profil, detailní historii pozic a technologický stack najdete přehledně v PDF životopisu.",
+      "button_text": "Stáhnout mé CV (PDF)",
+      "file_name": "Zivotopis_Marek_Horak.pdf"
+    },
     "technologies": {
       "title": "Primární technologie"
     },
@@ -75,6 +81,12 @@
       "title": "Select cooperation format:",
       "hpp": "Full-Time Employee",
       "b2b": "Project Cooperation (B2B)"
+    },
+    "cv_section": {
+      "title": "Interested in stable full-time cooperation?",
+      "description": "You can find my complete professional profile, detailed history of positions, and technology stack in my PDF resume.",
+      "button_text": "Download my CV (PDF)",
+      "file_name": "Resume_Marek_Horak.pdf"
     },
     "technologies": {
       "title": "Primary Technologies"

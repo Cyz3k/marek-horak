@@ -80,6 +80,9 @@
         </div>
     </section>
 
+    <div id="cv-section-container">
+        <!-- Dynamically filled by JS for HPP view -->
+    </div>
 
     <section class="max-w-5xl mx-auto px-6 pb-16">
         <h2 id="exp-title" class="text-2xl font-bold text-gray-900 mb-6">Profesní zkušenosti</h2>
@@ -249,6 +252,25 @@
             document.getElementById('tech-title').innerHTML = content.technologies.title;
             document.getElementById('projects-title').innerHTML = 'Ukázky realizovaných business automatizací'; // Or add to JSON
 
+            // --- CV Section (HPP only) ---
+            const cvContainer = document.getElementById('cv-section-container');
+            if (view === 'hpp' && content.cv_section) {
+                const cv = content.cv_section;
+                cvContainer.innerHTML = `
+                <section class="bg-blue-50 border-t border-b border-blue-100 py-10 text-center">
+                    <div class="max-w-3xl mx-auto px-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">${cv.title}</h3>
+                        <p class="text-gray-600 mb-6 text-sm md:text-base">${cv.description}</p>
+                        <a href="${cv.file_name}" download="${cv.file_name}" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-200">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span>${cv.button_text}</span>
+                        </a>
+                    </div>
+                </section>`;
+            } else {
+                cvContainer.innerHTML = '';
+            }
+
             // --- Filterable Experience ---
             const expContainer = document.getElementById('experience-container');
             expContainer.innerHTML = '';
@@ -298,6 +320,15 @@
             } else {
                 footerIcoBlock.classList.remove('flex');
                 footerIcoBlock.classList.add('hidden');
+            }
+
+            // Hide view switcher if not in 'all' mode
+            const coopTitle = document.getElementById('coop-title');
+            const linkHpp = document.getElementById('link-hpp');
+            const linkB2b = document.getElementById('link-b2b');
+            if (view !== 'all') {
+                coopTitle.classList.add('hidden');
+                linkHpp.parentElement.classList.add('hidden');
             }
         }
     </script>
