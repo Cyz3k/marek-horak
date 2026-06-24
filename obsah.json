@@ -66,7 +66,9 @@
       "description_hpp": "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.",
       "description_b2b": "Hledáte externího specialistu na optimalizaci M365 licencí nebo automatizaci procesů? Ozvěte se, probereme zadání.",
       "description_all": "Hledáte do týmu samostatného člověka, nebo externího specialistu na automatizaci? Pojďme se potkat a probrat možnosti.",
-      "ico": "IČO: 21860785",
+      "ico_text": "IČO: 21860785",
+      "link_b2b_text": "Prohlédnout B2B nabídku",
+      "link_hpp_text": "Zobrazit profil pro HPP",
       "rights": "© 2026 Marek Horák. Všechna práva vyhrazena. | Hostováno na GitHub Pages"
     }
   },
@@ -137,7 +139,9 @@
       "description_hpp": "Looking for an independent team member who can design and deliver an end-to-end solution? Let's connect.",
       "description_b2b": "Looking for an external specialist for M365 license optimization or process automation? Get in touch to discuss your needs.",
       "description_all": "Looking for a full-time team member or an external specialist for automation? Let's connect and discuss the possibilities.",
-      "ico": "VAT ID: 21860785",
+      "ico_text": "VAT ID: 21860785",
+      "link_b2b_text": "View B2B Offer",
+      "link_hpp_text": "View Full-Time Profile",
       "rights": "© 2026 Marek Horák. All rights reserved. | Hosted on GitHub Pages"
     }
   }

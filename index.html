@@ -26,10 +26,15 @@
             
             <div class="flex-1 text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                    Marek Horák
+                    <a href="/marek-horak/">Marek Horák</a>
                 </h1>
                 <h2 id="hero-subtitle" class="text-xl md:text-2xl font-semibold text-blue-600 mb-6"></h2>
                 
+                <div id="ico-header-block" class="hidden justify-center md:justify-start mb-6">
+                    <span class="text-gray-600 font-medium whitespace-nowrap bg-gray-100 border border-gray-200 px-4 py-1.5 rounded-md flex items-center gap-2">
+                        💼 <span id="header-ico"></span>
+                    </span>
+                </div>
                 <p id="hero-description" class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed"></p>
 
                 <p id="coop-title" class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3"></p>
@@ -186,11 +191,14 @@
                 <div class="flex justify-center">
                     <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">🔗 LinkedIn</a>
                 </div>
-                <div id="footer-ico-block" class="justify-center hidden">
-                    <span class="text-gray-600 font-medium whitespace-nowrap bg-gray-100 border border-gray-200 px-4 py-1.5 rounded-md flex items-center gap-2">
-                        💼 <span id="footer-ico">IČO: 21860785</span>
-                    </span>
-                </div>
+            </div>
+
+            <div id="footer-links-container" class="hidden mt-10 pt-8 border-t border-gray-200">
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Zobrazit specifickou nabídku:</p>
+                 <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a id="footer-link-hpp" href="?view=hpp" class="text-blue-600 font-semibold hover:underline"></a>
+                    <a id="footer-link-b2b" href="?view=b2b" class="text-blue-600 font-semibold hover:underline"></a>
+                 </div>
             </div>
             
             <p id="footer-rights" class="text-xs text-gray-400 mt-12">
@@ -309,26 +317,34 @@
             document.getElementById('footer-title').innerHTML = content.footer.title;
             const footerDescKey = `description_${view}`;
             document.getElementById('footer-desc').innerHTML = content.footer[footerDescKey] || content.footer.description_all;
-            document.getElementById('footer-ico').innerHTML = content.footer.ico;
             document.getElementById('footer-rights').innerHTML = content.footer.rights;
 
             // --- UI State ---
-            const footerIcoBlock = document.getElementById('footer-ico-block');
-            if (view === 'b2b' || view === 'all') {
-                footerIcoBlock.classList.remove('hidden');
-                footerIcoBlock.classList.add('flex');
-            } else {
-                footerIcoBlock.classList.remove('flex');
-                footerIcoBlock.classList.add('hidden');
+            const headerIcoBlock = document.getElementById('ico-header-block');
+            const footerLinksContainer = document.getElementById('footer-links-container');
+
+            if (view === 'b2b') {
+                headerIcoBlock.classList.remove('hidden');
+                headerIcoBlock.classList.add('flex');
+                document.getElementById('header-ico').innerHTML = content.footer.ico_text;
+            }
+
+            if (view === 'all') {
+                footerLinksContainer.classList.remove('hidden');
+                document.getElementById('footer-link-hpp').innerHTML = content.footer.link_hpp_text;
+                document.getElementById('footer-link-b2b').innerHTML = content.footer.link_b2b_text;
             }
 
             // Hide view switcher if not in 'all' mode
             const coopTitle = document.getElementById('coop-title');
             const linkHpp = document.getElementById('link-hpp');
-            const linkB2b = document.getElementById('link-b2b');
             if (view !== 'all') {
                 coopTitle.classList.add('hidden');
                 linkHpp.parentElement.classList.add('hidden');
+            } else {
+                // Ensure it's visible in 'all' mode if user navigates back
+                coopTitle.classList.remove('hidden');
+                linkHpp.parentElement.classList.remove('hidden');
             }
         }
     </script>
