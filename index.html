@@ -208,7 +208,7 @@
 
         async function fetchContent(lang, view) {
             try {
-                const response = await fetch('/marek-horak/obsah.json');
+                const response = await fetch('obsah.json');
                 const allContent = await response.json();
                 const content = allContent[lang];
                 renderContent(content, view);
@@ -216,6 +216,25 @@
                 console.error('Error fetching or parsing content:', error);
                 document.body.innerHTML = 'Error loading page content.';
             }
+        }
+
+        function switchLanguage(selectedLang) {
+            document.documentElement.lang = selectedLang;
+            const params = new URLSearchParams(window.location.search);
+            const view = params.get('view') || 'all';
+            
+            // Vizuální zvýraznění aktivního jazyka
+            const btnCz = document.getElementById('lang-cz');
+            const btnEn = document.getElementById('lang-en');
+            if (selectedLang === 'cz') {
+                btnCz.className = "w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0";
+                btnEn.className = "w-10 h-10 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100 overflow-hidden flex items-center justify-center p-0";
+            } else {
+                btnEn.className = "w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0";
+                btnCz.className = "w-10 h-10 rounded-full bg-white border-2 border-transparent opacity-50 shadow-sm transition transform hover:scale-110 hover:opacity-100 overflow-hidden flex items-center justify-center p-0";
+            }
+
+            fetchContent(selectedLang, view);
         }
 
         function renderContent(content, view) {
