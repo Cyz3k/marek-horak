@@ -320,40 +320,37 @@
             document.getElementById('footer-rights').innerHTML = content.links.rights;
 
             // --- UI State ---
+            // Get all conditional elements
             const headerIcoBlock = document.getElementById('ico-header-block');
             const footerLinksContainer = document.getElementById('footer-links-container');
+            const projectsSection = document.getElementById('projects-section');
+            const coopTitle = document.getElementById('coop-title');
+            const linkHpp = document.getElementById('link-hpp');
+            const viewSwitcher = linkHpp.parentElement;
 
-            if (view === 'b2b') {
-                headerIcoBlock.classList.remove('hidden');
-                headerIcoBlock.classList.add('flex');
-                document.getElementById('header-ico').innerHTML = content.footer.ico_text;
-            }
-
+            // 1. Reset all to default state (hidden)
+            headerIcoBlock.classList.add('hidden');
+            footerLinksContainer.classList.add('hidden');
+            
+            // 2. Apply visibility based on the current view
             if (view === 'all') {
+                viewSwitcher.classList.remove('hidden');
+                coopTitle.classList.remove('hidden');
+                projectsSection.classList.remove('hidden');
                 footerLinksContainer.classList.remove('hidden');
                 document.getElementById('footer-link-hpp').innerHTML = content.links.link_hpp_text;
                 document.getElementById('footer-link-b2b').innerHTML = content.links.link_b2b_text;
-            }
-
-            // Hide projects section if in HPP view
-            const projectsSection = document.getElementById('projects-section');
-            if (view === 'hpp') {
-                projectsSection.classList.add('hidden');
-            } else {
-                // Ensure it's visible for 'b2b' and 'all'
-                projectsSection.classList.remove('hidden');
-            }
-
-            // Hide view switcher if not in 'all' mode
-            const coopTitle = document.getElementById('coop-title');
-            const linkHpp = document.getElementById('link-hpp');
-            if (view !== 'all') {
+            } else if (view === 'b2b') {
+                viewSwitcher.classList.add('hidden');
                 coopTitle.classList.add('hidden');
-                linkHpp.parentElement.classList.add('hidden');
-            } else {
-                // Ensure it's visible in 'all' mode if user navigates back
-                coopTitle.classList.remove('hidden');
-                linkHpp.parentElement.classList.remove('hidden');
+                projectsSection.classList.remove('hidden');
+                headerIcoBlock.classList.remove('hidden');
+                headerIcoBlock.classList.add('flex');
+                document.getElementById('header-ico').innerHTML = content.footer.ico_text;
+            } else if (view === 'hpp') {
+                viewSwitcher.classList.add('hidden');
+                coopTitle.classList.add('hidden');
+                projectsSection.classList.add('hidden');
             }
         }
     </script>
