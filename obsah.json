@@ -93,6 +93,28 @@
       "title": "Pokročilé integrace & Optimalizace nákladů",
       "description": "Zaměřuji se na regionální i globální řešení, která standardně vyžadují drahé licence, a stavím je v rámci základního M365 prostředí."
     },
+    "advanced_integrations": [
+      {
+        "icon": "💡",
+        "title": "Optimalizace licenčních nákladů",
+        "description": "Využití Connection References a servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele."
+      },
+      {
+        "icon": "📄",
+        "title": "Inteligentní vytěžování faktur",
+        "description": "Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a integrace služby ALICE přes API."
+      },
+      {
+        "icon": "🌐",
+        "title": "Propojování na státní registry",
+        "description": "Automatické vyhledávání a načítání firemních dat z registru ARES na základě zadání IČO přímo v aplikaci."
+      },
+      {
+        "icon": "⚡",
+        "title": "Pokročilá práce s daty (XPath)",
+        "description": "Efektivní transformace komplexních XML struktur přímo v tocích bez nutnosti mezikroků."
+      }
+    ],
     "footer": {
       "title": "Máte proces, který potřebuje zrychlit?",
       "description_hpp": "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.",
@@ -200,6 +222,28 @@
       "title": "Advanced Integrations & Cost Optimization",
       "description": "I focus on regional and global solutions that typically require expensive licenses and build them within the basic M365 environment."
     },
+    "advanced_integrations": [
+      {
+        "icon": "💡",
+        "title": "License Cost Optimization",
+        "description": "Using Connection References and service accounts eliminates the need for expensive premium licenses for users."
+      },
+      {
+        "icon": "📄",
+        "title": "Intelligent Invoice Extraction",
+        "description": "Automated conversion of PDF invoices into XML/ISDOC structures using AI and ALICE service integration via API."
+      },
+      {
+        "icon": "🌐",
+        "title": "Connecting to State Registries",
+        "description": "Automatic search and retrieval of company data from the ARES registry based on VAT ID input directly in the application."
+      },
+      {
+        "icon": "⚡",
+        "title": "Advanced Data Handling (XPath)",
+        "description": "Efficient transformation of complex XML structures directly in flows without intermediate steps."
+      }
+    ],
     "footer": {
       "title": "Do you have a process that needs speeding up?",
       "description_hpp": "Looking for an independent team member who can design and deliver an end-to-end solution? Let's connect.",

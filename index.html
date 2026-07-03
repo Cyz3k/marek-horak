@@ -140,35 +140,8 @@
                 <h2 id="adv-main-title" class="text-2xl md:text-3xl font-bold text-white mb-3">Pokročilé integrace &amp; Optimalizace nákladů</h2>
                 <p id="adv-main-desc" class="text-gray-400 max-w-2xl text-sm md:text-base">Zaměřuji se na regionální i globální řešení, která standardně vyžadují drahé licence, a stavím je v rámci základního M365 prostředí.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">💡</div>
-                    <div>
-                        <h3 id="adv1-title" class="font-bold text-lg mb-1">Optimalizace licenčních nákladů</h3>
-                        <p id="adv1-desc" class="text-sm text-gray-400">Využití Connection References a servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">📄</div>
-                    <div>
-                        <h3 id="adv2-title" class="font-bold text-lg mb-1">Inteligentní vytěžování faktur</h3>
-                        <p id="adv2-desc" class="text-sm text-gray-400">Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a integrace služby ALICE přes API.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">🌐</div>
-                    <div>
-                        <h3 id="adv3-title" class="font-bold text-lg mb-1">Propojování na státní registry</h3>
-                        <p id="adv3-desc" class="text-sm text-gray-400">Automatické vyhledávání a načítání firemních dat z registru ARES na základě zadání IČO přímo v aplikaci.</p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">⚡</div>
-                    <div>
-                        <h3 id="adv4-title" class="font-bold text-lg mb-1">Pokročilá práce s daty (XPath)</h3>
-                        <p id="adv4-desc" class="text-sm text-gray-400">Efektivní transformace komplexních XML struktur přímo v tocích bez nutnosti mezikroků.</p>
-                    </div>
-                </div>
+            <div id="advanced-integrations-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Dynamically filled by JS -->
             </div>
         </div>
     </section>
@@ -329,6 +302,22 @@
             if (content.focus) {
                 document.getElementById('adv-main-title').innerHTML = content.focus.title;
                 document.getElementById('adv-main-desc').innerHTML = content.focus.description;
+            }
+
+            // --- Advanced Integrations Section ---
+            const advContainer = document.getElementById('advanced-integrations-container');
+            if (content.advanced_integrations && advContainer) {
+                advContainer.innerHTML = ''; // Clear previous content
+                content.advanced_integrations.forEach(item => {
+                    advContainer.innerHTML += `
+                        <div class="flex gap-4 items-start">
+                            <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">${item.icon}</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">${item.title}</h3>
+                                <p class="text-sm text-gray-400">${item.description}</p>
+                            </div>
+                        </div>`;
+                });
             }
 
             // --- Footer ---
