@@ -61,6 +61,36 @@
         "description": "Kompletní návrh a transformace faktury z PDF do formátu XML/ISDOC pro účetní systémy (např. Pohoda). Řešení využívá REST API služby ALICE nebo Copilot AI s optimalizací licenčních nákladů (prémiová licence je třeba jen pro servisní účet)."
       }
     ],
+    "services": {
+      "title": "Kompletní realizace projektů (Od A do Z)",
+      "description": "Pomáhám zastřešit celý životní cyklus aplikace tak, aby proces stál minimum lidského úsilí i licenčních poplatků.",
+      "items": [
+        {
+          "icon": "🔍",
+          "title": "1. Analýza & Data",
+          "text": "Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenance za extra licence."
+        },
+        {
+          "icon": "💻",
+          "title": "2. Vývoj & Toky",
+          "text": "Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate."
+        },
+        {
+          "icon": "🧪",
+          "title": "3. Uživatelské testy",
+          "text": "Aplikace testuji v reálném provozu se zaměstnanci, které osobně zaškolím."
+        },
+        {
+          "icon": "🛠️",
+          "title": "4. Ladění & Podpora",
+          "text": "Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba běžících systémů."
+        }
+      ]
+    },
+    "focus": {
+      "title": "Pokročilé integrace & Optimalizace nákladů",
+      "description": "Zaměřuji se na regionální i globální řešení, která standardně vyžadují drahé licence, a stavím je v rámci základního M365 prostředí."
+    },
     "footer": {
       "title": "Máte proces, který potřebuje zrychlit?",
       "description_hpp": "Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.",
@@ -98,7 +128,7 @@
     "experience": [
       {
         "view": "hpp",
-        "company": "Vodárenská akciová společnost, a.s. (Waterworks plc)",
+        "company": "Vodárenská akciová společnost, a.s.",
         "period": "June 2018 – Present",
         "position": "Power Platform Developer & M365 Solution Designer",
         "tasks": [
@@ -136,6 +166,36 @@
         "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI, with optimized licensing (premium license needed only for a service account)."
       }
     ],
+    "services": {
+      "title": "End-to-End Project Delivery (From A to Z)",
+      "description": "I help manage the entire application lifecycle to ensure processes require minimal human effort and licensing fees.",
+      "items": [
+        {
+          "icon": "🔍",
+          "title": "1. Analysis & Data",
+          "text": "I design efficient structures in SharePoint with a focus on avoiding extra license costs."
+        },
+        {
+          "icon": "💻",
+          "title": "2. Development & Flows",
+          "text": "I develop user-friendly interfaces in Power Apps and connect them with automation in Power Automate."
+        },
+        {
+          "icon": "🧪",
+          "title": "3. User Testing",
+          "text": "I test applications in real-world scenarios with employees whom I personally train."
+        },
+        {
+          "icon": "🛠️",
+          "title": "4. Debugging & Support",
+          "text": "Immediate debugging and long-term maintenance of running systems are a matter of course for me."
+        }
+      ]
+    },
+    "focus": {
+      "title": "Advanced Integrations & Cost Optimization",
+      "description": "I focus on regional and global solutions that typically require expensive licenses and build them within the basic M365 environment."
+    },
     "footer": {
       "title": "Do you have a process that needs speeding up?",
       "description_hpp": "Looking for an independent team member who can design and deliver an end-to-end solution? Let's connect.",
