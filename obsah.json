@@ -21,6 +21,7 @@
       "title": "Primární technologie"
     },
     "experience": [
+      { "title": "Profesní zkušenosti" },
       {
         "view": "hpp",
         "company": "Vodárenská akciová společnost a.s.",
@@ -42,6 +43,7 @@
       }
     ],
     "projects": [
+      { "title": "Ukázky realizovaných business automatizací" },
       {
         "view": "b2b",
         "title": "Interní aplikace pro správu návštěv a recepce",
@@ -126,6 +128,7 @@
       "title": "Primary Technologies"
     },
     "experience": [
+      { "title": "Professional Experience" },
       {
         "view": "hpp",
         "company": "Vodárenská akciová společnost, a.s.",
@@ -147,6 +150,7 @@
       }
     ],
     "projects": [
+      { "title": "Showcase of Implemented Business Automations" },
       {
         "view": "b2b",
         "title": "Internal Visitor Management & Reception App",

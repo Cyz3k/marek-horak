@@ -258,12 +258,14 @@
             document.getElementById('btn-hpp-text').innerHTML = content.cooperation.hpp;
             document.getElementById('btn-b2b-text').innerHTML = content.cooperation.b2b;
             document.getElementById('tech-title').innerHTML = content.technologies.title;
-            document.getElementById('projects-title').innerHTML = 'Ukázky realizovaných business automatizací'; // Or add to JSON
+            document.getElementById('exp-title').innerHTML = content.experience[0].title;
+            document.getElementById('projects-title').innerHTML = content.projects[0].title;
 
             // --- CV Section (HPP only) ---
             const cvContainer = document.getElementById('cv-section-container');
             if (view === 'hpp' && content.cv_section) {
                 const cv = content.cv_section;
+                cvContainer.innerHTML = ''; // Clear previous content
                 cvContainer.innerHTML = `
                 <section class="bg-blue-50 border-t border-b border-blue-100 py-10 text-center">
                     <div class="max-w-3xl mx-auto px-6">
@@ -282,7 +284,7 @@
             // --- Filterable Experience ---
             const expContainer = document.getElementById('experience-container');
             expContainer.innerHTML = '';
-            const filteredExp = content.experience.filter(item => view === 'all' || item.view === 'all' || item.view === view);
+            const filteredExp = content.experience.slice(1).filter(item => view === 'all' || item.view === 'all' || item.view === view);
             filteredExp.forEach(item => {
                 const tasksHtml = item.tasks ? `<ul class="text-sm text-gray-600 space-y-2 list-disc pl-4 mt-3">${item.tasks.map(task => `<li>${task}</li>`).join('')}</ul>` : '';
                 const descriptionHtml = item.description ? `<p class="text-sm text-gray-600">${item.description}</p>` : '';
@@ -301,7 +303,7 @@
             // --- Filterable Projects ---
             const projContainer = document.getElementById('projects-container');
             projContainer.innerHTML = '';
-            const filteredProj = content.projects.filter(item => view === 'all' || item.view === 'all' || item.view === view);
+            const filteredProj = content.projects.slice(1).filter(item => view === 'all' || item.view === 'all' || item.view === view);
             filteredProj.forEach(item => {
                 projContainer.innerHTML += `
                     <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
@@ -312,6 +314,22 @@
                         <p class="text-sm text-gray-600">${item.description}</p>
                     </div>`;
             });
+
+            // --- Services / Steps Section ---
+            if (content.services) {
+                document.getElementById('steps-main-title').innerHTML = content.services.title;
+                document.getElementById('steps-main-desc').innerHTML = content.services.description;
+                content.services.items.forEach((item, index) => {
+                    document.querySelector(`#step${index + 1}-title`).innerHTML = item.title;
+                    document.querySelector(`#step${index + 1}-desc`).innerHTML = item.text;
+                });
+            }
+
+            // --- Focus / Advanced Section ---
+            if (content.focus) {
+                document.getElementById('adv-main-title').innerHTML = content.focus.title;
+                document.getElementById('adv-main-desc').innerHTML = content.focus.description;
+            }
 
             // --- Footer ---
             document.getElementById('footer-title').innerHTML = content.footer.title;
