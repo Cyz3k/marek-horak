@@ -98,8 +98,8 @@
     "experience": [
       {
         "view": "hpp",
-        "company": "Vodárenská akciová společnost a.s.",
-        "period": "6/2018 – Present",
+        "company": "Vodárenská akciová společnost, a.s. (Waterworks plc)",
+        "period": "June 2018 – Present",
         "position": "Power Platform Developer & M365 Solution Designer",
         "tasks": [
           "<strong>Project Manager - Attendance System:</strong> Following a successful pilot project, led the full deployment across all 7 company divisions.",
@@ -111,7 +111,7 @@
       {
         "view": "all",
         "company": "Freelance / B2B Cooperation",
-        "period": "7/2024 – Present",
+        "period": "July 2024 – Present",
         "position": "SharePoint & Power Platform Specialist",
         "description": "Through external contracts, I help small businesses securely digitalize processes, build custom tracking systems in SharePoint Lists, and automate approval workflows under strict client environment security."
       }
@@ -130,7 +130,7 @@
         "description": "An automated Power Automate flow that tracks approval deadlines, detects client language (CZ/EN), and drafts reminder emails. It also handles cases like out-of-office auto-replies."
       },
       {
-        "view": "all",
+        "view": "hpp",
         "title": "Invoice Extraction (PDF) using AI",
         "badge": "Enterprise Solution",
         "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI, with optimized licensing (premium license needed only for a service account)."
