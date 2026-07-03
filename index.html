@@ -233,6 +233,10 @@
             document.getElementById('tech-title').innerHTML = content.technologies.title;
             document.getElementById('exp-title').innerHTML = content.experience[0].title;
             document.getElementById('projects-title').innerHTML = content.projects[0].title;
+            document.getElementById('steps-main-title').innerHTML = content.services.title;
+            document.getElementById('steps-main-desc').innerHTML = content.services.description;
+            document.getElementById('adv-main-title').innerHTML = content.focus.title;
+            document.getElementById('adv-main-desc').innerHTML = content.focus.description;
 
             // --- CV Section (HPP only) ---
             const cvContainer = document.getElementById('cv-section-container');
@@ -290,18 +294,10 @@
 
             // --- Services / Steps Section ---
             if (content.services) {
-                document.getElementById('steps-main-title').innerHTML = content.services.title;
-                document.getElementById('steps-main-desc').innerHTML = content.services.description;
                 content.services.items.forEach((item, index) => {
                     document.querySelector(`#step${index + 1}-title`).innerHTML = item.title;
                     document.querySelector(`#step${index + 1}-desc`).innerHTML = item.text;
                 });
-            }
-
-            // --- Focus / Advanced Section ---
-            if (content.focus) {
-                document.getElementById('adv-main-title').innerHTML = content.focus.title;
-                document.getElementById('adv-main-desc').innerHTML = content.focus.description;
             }
 
             // --- Advanced Integrations Section ---
