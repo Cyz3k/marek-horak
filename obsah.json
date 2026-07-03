@@ -130,7 +130,7 @@
         "description": "An automated Power Automate flow that tracks approval deadlines, detects client language (CZ/EN), and drafts reminder emails. It also handles cases like out-of-office auto-replies."
       },
       {
-        "view": "hpp",
+        "view": "all",
         "title": "Invoice Extraction (PDF) using AI",
         "badge": "Enterprise Solution",
         "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI, with optimized licensing (premium license needed only for a service account)."
