@@ -45,6 +45,14 @@
     "projects": [
       { "title": "Ukázky realizovaných business automatizací" },
       {
+        "view": "all",
+        "title": "Key Watcher – evidence klíčů, zápůjček a vzdělávání",
+        "badge": "Google Sheets & Apps Script",
+        "description": "Webová aplikace nad Google tabulkou: kdo má jaký klíč, předávání z ruky do ruky s dohledatelnou historií, školení a hlídání ročních norem vzdělávání zaměstnanců. Bez licenčních poplatků, data zůstávají u zákazníka.",
+        "link": "projekty/key-watcher.html",
+        "link_text": "Prohlédnout ukázku →"
+      },
+      {
         "view": "b2b",
         "title": "Interní aplikace pro správu návštěv a recepce",
         "badge": "Power Apps & Automate",
@@ -173,6 +181,14 @@
     ],
     "projects": [
       { "title": "Showcase of Implemented Business Automations" },
+      {
+        "view": "all",
+        "title": "Key Watcher – key, loan and training records",
+        "badge": "Google Sheets & Apps Script",
+        "description": "Web app on top of a Google Sheet: who holds which key, hand-to-hand handovers with full history, trainings and yearly training-hour targets per employee. No licence fees, data stays with the customer.",
+        "link": "projekty/key-watcher.html",
+        "link_text": "View the case study (CZ) →"
+      },
       {
         "view": "b2b",
         "title": "Internal Visitor Management & Reception App",
