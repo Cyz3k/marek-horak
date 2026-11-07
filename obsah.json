@@ -29,7 +29,7 @@
         "position": "Power Platform Developer & M365 Solution Designer",
         "tasks": [
           "<strong>Projektový manažer - projekt Docházky:</strong> Po úspěšném uskutečnění pilotního projektu pro jednu divizi následovalo kompletní nasazení řešení napříč všemi 7 divizemi společnosti.",
-          "<strong>Optimalizace licencí:</strong> Přestavba architektury toků pomocí Connection References bez licenčních vícenákladů.",
+          "<strong>Správa a nasazování řešení:</strong> Přestavba toků do solutions s Connection References pro snadný přenos mezi prostředími a nezávislost na osobních účtech.",
           "<strong>Vytěžování dat:</strong> Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a API rozhraní.",
           "<strong>Tvorba interních nástrojů:</strong> Vývoj SW pro objednávky, digitalizaci protokolů, objednání tonerů a nástup zaměstnanců."
         ]
@@ -68,7 +68,7 @@
         "view": "all",
         "title": "Vytěžení faktury (PDF) pomocí AI",
         "badge": "Enterprise řešení",
-        "description": "Kompletní návrh a transformace faktury z PDF do formátu XML/ISDOC pro účetní systémy (např. Pohoda). Řešení využívá REST API služby ALICE nebo Copilot AI s optimalizací licenčních nákladů (prémiová licence je třeba jen pro servisní účet)."
+        "description": "Kompletní návrh a transformace faktury z PDF do formátu XML/ISDOC pro účetní systémy (např. Pohoda). Řešení využívá REST API služby ALICE nebo Copilot AI."
       }
     ],
     "services": {
@@ -99,13 +99,13 @@
     },
     "focus": {
       "title": "Pokročilé integrace & Optimalizace nákladů",
-      "description": "Zaměřuji se na regionální i globální řešení, která standardně vyžadují drahé licence, a stavím je v rámci základního M365 prostředí."
+      "description": "Řešení, která se často staví na drahých prémiových licencích, navrhuji tak, aby vystačila se standardními konektory v rámci licencí M365, které už ve firmě máte."
     },
     "advanced_integrations": [
       {
         "icon": "💡",
-        "title": "Optimalizace licenčních nákladů",
-        "description": "Využití Connection References a servisních účtů eliminuje potřebu drahých prémiových licencí pro uživatele."
+        "title": "Licenčně efektivní architektura",
+        "description": "Aplikace stavím na konektorech, které pokrývá licence M365 jednotlivých uživatelů – bez nutnosti dokupovat prémiové licence."
       },
       {
         "icon": "📄",
@@ -166,7 +166,7 @@
         "position": "Power Platform Developer & M365 Solution Designer",
         "tasks": [
           "<strong>Project Manager - Attendance System:</strong> Following a successful pilot project, led the full deployment across all 7 company divisions.",
-          "<strong>License Optimization:</strong> Rebuilt flow architecture using Connection References to avoid additional licensing costs.",
+          "<strong>Solution Management & Deployment:</strong> Rebuilt flows into solutions with Connection References for easy transfer between environments and independence from personal accounts.",
           "<strong>Data Extraction:</strong> Automated conversion of PDF invoices into XML/ISDOC structures using AI and REST APIs.",
           "<strong>Internal Tools Development:</strong> Created software for orders, protocol digitalization, toner ordering, and employee onboarding."
         ]
@@ -205,7 +205,7 @@
         "view": "all",
         "title": "Invoice Extraction (PDF) using AI",
         "badge": "Enterprise Solution",
-        "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI, with optimized licensing (premium license needed only for a service account)."
+        "description": "End-to-end design for transforming PDF invoices into XML/ISDOC format for accounting systems (e.g., Pohoda). The solution uses the ALICE REST API or Copilot AI."
       }
     ],
     "services": {
@@ -236,13 +236,13 @@
     },
     "focus": {
       "title": "Advanced Integrations & Cost Optimization",
-      "description": "I focus on regional and global solutions that typically require expensive licenses and build them within the basic M365 environment."
+      "description": "Solutions that are often built on expensive premium licenses, I design to work with standard connectors covered by the M365 licenses your company already has."
     },
     "advanced_integrations": [
       {
         "icon": "💡",
-        "title": "License Cost Optimization",
-        "description": "Using Connection References and service accounts eliminates the need for expensive premium licenses for users."
+        "title": "License-Efficient Architecture",
+        "description": "I build apps on connectors covered by each user's own M365 license – no need to buy additional premium licenses."
       },
       {
         "icon": "📄",
