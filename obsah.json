@@ -108,6 +108,11 @@
         "description": "Aplikace stavím na konektorech, které pokrývá licence M365 jednotlivých uživatelů – bez nutnosti dokupovat prémiové licence."
       },
       {
+        "icon": "💰",
+        "title": "Výběr licenčního modelu",
+        "description": "Spočítám, co se vám vyplatí: Premium na uživatele, licence na proces, nebo platba za spuštění. Zohledním počet uživatelů, četnost běhů i spotřebu AI kreditů."
+      },
+      {
         "icon": "📄",
         "title": "Inteligentní vytěžování faktur",
         "description": "Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a integrace služby ALICE přes API."
@@ -243,6 +248,11 @@
         "icon": "💡",
         "title": "License-Efficient Architecture",
         "description": "I build apps on connectors covered by each user's own M365 license – no need to buy additional premium licenses."
+      },
+      {
+        "icon": "💰",
+        "title": "Choosing the Right License Model",
+        "description": "I calculate what pays off for you: Premium per user, a per-process license, or pay-as-you-go per run – based on the number of users, run frequency and AI credit consumption."
       },
       {
         "icon": "📄",
