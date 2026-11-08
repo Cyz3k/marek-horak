@@ -97,6 +97,21 @@
         }
       ]
     },
+    "custom_software": {
+      "title": "Software na míru podle vašeho zadání",
+      "description": "Nenašli jste hotový program, který by seděl na váš proces? Postavím aplikaci podle vašeho zadání, od první analýzy až po nasazení a zaškolení. Po úvodní analýze dostanete rozpis prací s cenou a termínem a práva k aplikaci na vás přejdou podle smlouvy.",
+      "cta": "Popsat zadání →"
+    },
+    "contact_form": {
+      "name": "Jméno",
+      "email": "E-mail",
+      "message": "S čím vám mohu pomoci?",
+      "submit": "Odeslat zprávu",
+      "sending": "Odesílám…",
+      "success": "Děkuji, zpráva je odeslaná. Ozvu se vám co nejdříve.",
+      "error": "Zprávu se nepodařilo odeslat. Napište mi prosím přímo na info@marekhorak.cz.",
+      "privacy": "Jméno, e-mail a zprávu použije Marek Horák (IČO 21860785) jen k vyřízení vašeho dotazu a uchová je jen po dobu nezbytnou k jeho vyřízení. Zpráva se doručuje přes službu Google. Opravu nebo smazání údajů si můžete vyžádat na info@marekhorak.cz."
+    },
     "focus": {
       "title": "Pokročilé integrace & Optimalizace nákladů",
       "description": "Řešení, která se často staví na drahých prémiových licencích, navrhuji tak, aby vystačila se standardními konektory v rámci licencí M365, které už ve firmě máte."
@@ -239,6 +254,21 @@
         }
       ]
     },
+    "custom_software": {
+      "title": "Custom Software Built to Your Brief",
+      "description": "Can't find off-the-shelf software that fits your process? I build an application to your brief, from the first analysis through deployment and training. After the initial analysis you get a work breakdown with price and timeline, and the rights to the application pass to you under the contract.",
+      "cta": "Describe your project →"
+    },
+    "contact_form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "How can I help you?",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thank you, your message has been sent. I'll get back to you as soon as possible.",
+      "error": "The message could not be sent. Please write to me directly at info@marekhorak.cz.",
+      "privacy": "Your name, email and message are used by Marek Horák (Company ID 21860785) only to handle your enquiry and are kept only as long as needed for that. The message is delivered via Google. You can request correction or deletion of your data at info@marekhorak.cz."
+    },
     "focus": {
       "title": "Advanced Integrations & Cost Optimization",
       "description": "Solutions that are often built on expensive premium licenses, I design to work with standard connectors covered by the M365 licenses your company already has."
@@ -275,7 +305,7 @@
       "description_hpp": "Looking for an independent team member who can design and deliver an end-to-end solution? Let's connect.",
       "description_b2b": "Looking for an external specialist for M365 license optimization or process automation? Get in touch to discuss your needs.",
       "description_all": "Looking for a full-time team member or an external specialist for automation? Let's connect and discuss the possibilities.",
-      "ico_text": "VAT ID: 21860785"
+      "ico_text": "Company ID (IČO): 21860785"
     },
     "links": {
       "link_b2b_text": "View B2B Offer",

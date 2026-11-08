@@ -35,11 +35,7 @@
                 </h1>
                 <h2 id="hero-subtitle" class="text-xl md:text-2xl font-semibold text-blue-600 mb-6"></h2>
                 
-                <div id="ico-header-block" class="hidden justify-center md:justify-start mb-6">
-                    <span class="text-gray-600 font-medium whitespace-nowrap bg-gray-100 border border-gray-200 px-4 py-1.5 rounded-md flex items-center gap-2">
-                        💼 <span id="header-ico"></span>
-                    </span>
-                </div>
+                <p id="ico-header-block" class="hidden text-sm text-gray-500 mb-6"></p>
                 <p id="hero-description" class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed"></p>
 
                 <p id="coop-title" class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3"></p>
@@ -137,6 +133,13 @@
                 <p id="step4-desc" class="text-sm text-gray-600">Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba běžících systémů.</p>
             </div>
         </div>
+        <div id="custom-software-block" class="mt-8 bg-blue-50 border border-blue-100 rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
+            <div class="flex-1">
+                <h3 id="custom-software-title" class="font-bold text-xl text-gray-900 mb-2"></h3>
+                <p id="custom-software-desc" class="text-sm md:text-base text-gray-600"></p>
+            </div>
+            <a id="custom-software-cta" href="#contact" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition whitespace-nowrap"></a>
+        </div>
     </section>
 
     <section class="bg-gray-900 text-white py-16">
@@ -152,13 +155,33 @@
     </section>
 
 
-    <footer class="bg-gray-100 border-t border-gray-200 py-16 text-center">
+    <footer id="contact" class="bg-gray-100 border-t border-gray-200 py-16 text-center">
         <div class="max-w-5xl mx-auto px-6">
             <h2 id="footer-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Máte proces, který potřebuje zrychlit?</h2>
             <p id="footer-desc" class="text-gray-600 mb-10 text-base md:text-lg">
                 Hledáte do týmu samostatného člověka, který navrhne a dodá řešení od A do Z? Pojďme se potkat.
             </p>
             
+            <form id="contact-form" class="hidden max-w-xl mx-auto text-left mb-12 space-y-4">
+                <div>
+                    <label id="form-name-label" for="form-name" class="block text-sm font-semibold text-gray-700 mb-1"></label>
+                    <input id="form-name" name="name" type="text" required maxlength="100" autocomplete="name" class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label id="form-email-label" for="form-email" class="block text-sm font-semibold text-gray-700 mb-1"></label>
+                    <input id="form-email" name="email" type="email" required maxlength="200" autocomplete="email" class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label id="form-message-label" for="form-message" class="block text-sm font-semibold text-gray-700 mb-1"></label>
+                    <textarea id="form-message" name="message" rows="5" required maxlength="5000" class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <!-- Honeypot: hidden from people, bots fill it in -->
+                <input name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
+                <p id="form-privacy" class="text-xs text-gray-500"></p>
+                <button id="form-submit" type="submit" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition"></button>
+                <p id="form-status" role="status" class="text-sm font-semibold"></p>
+            </form>
+
             <div id="footer-contacts-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 max-w-4xl mx-auto items-center justify-center">
                 <div class="flex justify-center">
                     <a href="mailto:info@marekhorak.cz" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">📧 info@marekhorak.cz</a>
@@ -179,13 +202,18 @@
                  </div>
             </div>
             
-            <p id="footer-rights" class="text-xs text-gray-400 mt-12">
+            <p id="footer-ico" class="text-xs text-gray-500 mt-12"></p>
+            <p id="footer-rights" class="text-xs text-gray-400 mt-1">
                 © 2026 Marek Horák. Všechna práva vyhrazena. | Hostováno na GitHub Pages
             </p>
         </div>
     </footer>
 
     <script>
+        // URL of the deployed Apps Script web app (apps-script/kontaktni-formular.gs). Form stays hidden while empty.
+        const CONTACT_FORM_ENDPOINT = '';
+        let contactFormTexts = {};
+
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
             let view = params.get('view') || 'all'; // 'hpp', 'b2b', or 'all'
@@ -193,7 +221,40 @@
             let lang = document.documentElement.lang || 'cz';
 
             fetchContent(lang, view);
+            setupContactForm();
         });
+
+        function setupContactForm() {
+            const form = document.getElementById('contact-form');
+            if (!CONTACT_FORM_ENDPOINT) return;
+            form.classList.remove('hidden');
+
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+                const submit = document.getElementById('form-submit');
+                const status = document.getElementById('form-status');
+                const submitText = submit.textContent;
+                submit.disabled = true;
+                submit.textContent = contactFormTexts.sending;
+                status.textContent = '';
+                status.className = 'text-sm font-semibold';
+
+                let ok = false;
+                try {
+                    // URL-encoded body keeps this a simple request, Apps Script does not answer CORS preflight
+                    const response = await fetch(CONTACT_FORM_ENDPOINT, { method: 'POST', body: new URLSearchParams(new FormData(form)) });
+                    ok = (await response.json()).ok === true;
+                } catch (error) {
+                    console.error('Odeslání formuláře selhalo:', error);
+                }
+
+                status.textContent = ok ? contactFormTexts.success : contactFormTexts.error;
+                status.classList.add(ok ? 'text-green-700' : 'text-red-700');
+                if (ok) form.reset();
+                submit.disabled = false;
+                submit.textContent = submitText;
+            });
+        }
 
         async function fetchContent(lang, view) {
             try {
@@ -306,6 +367,21 @@
                 });
             }
 
+            // --- Custom Software Block ---
+            document.getElementById('custom-software-block').classList.toggle('hidden', view === 'hpp');
+            document.getElementById('custom-software-title').innerHTML = content.custom_software.title;
+            document.getElementById('custom-software-desc').innerHTML = content.custom_software.description;
+            document.getElementById('custom-software-cta').innerHTML = content.custom_software.cta;
+
+            // --- Contact Form ---
+            contactFormTexts = content.contact_form;
+            document.getElementById('form-name-label').textContent = contactFormTexts.name;
+            document.getElementById('form-email-label').textContent = contactFormTexts.email;
+            document.getElementById('form-message-label').textContent = contactFormTexts.message;
+            document.getElementById('form-privacy').textContent = contactFormTexts.privacy;
+            document.getElementById('form-submit').textContent = contactFormTexts.submit;
+            document.getElementById('form-status').textContent = '';
+
             // --- Advanced Integrations Section ---
             const advContainer = document.getElementById('advanced-integrations-container');
             if (content.advanced_integrations && advContainer) {
@@ -326,6 +402,7 @@
             document.getElementById('footer-title').innerHTML = content.footer.title;
             const footerDescKey = `description_${view}`;
             document.getElementById('footer-desc').innerHTML = content.footer[footerDescKey] || content.footer.description_all; // This is correct
+            document.getElementById('footer-ico').innerHTML = content.footer.ico_text;
             document.getElementById('footer-rights').innerHTML = content.links.rights;
 
             // --- UI State ---
@@ -354,8 +431,7 @@
                 coopTitle.classList.add('hidden');
                 projectsSection.classList.remove('hidden');
                 headerIcoBlock.classList.remove('hidden');
-                headerIcoBlock.classList.add('flex');
-                document.getElementById('header-ico').innerHTML = content.footer.ico_text;
+                headerIcoBlock.innerHTML = content.footer.ico_text;
             } else if (view === 'hpp') {
                 viewSwitcher.classList.add('hidden');
                 coopTitle.classList.add('hidden');
