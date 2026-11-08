@@ -31,7 +31,7 @@
             
             <div class="flex-1 text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                    <a href="./">Marek Horák</a>
+                    Marek Horák
                 </h1>
                 <h2 id="hero-subtitle" class="text-xl md:text-2xl font-semibold text-blue-600 mb-6"></h2>
                 
@@ -381,6 +381,7 @@
             document.getElementById('custom-software-title').innerHTML = content.custom_software.title;
             document.getElementById('custom-software-desc').innerHTML = content.custom_software.description;
             document.getElementById('custom-software-cta').innerHTML = content.custom_software.cta;
+            document.getElementById('custom-software-cta').href = mailtoHref(content.custom_software.mail);
 
             // --- Contact Form ---
             contactFormTexts = content.contact_form;

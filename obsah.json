@@ -64,7 +64,7 @@
         "view": "b2b",
         "title": "Inteligentní multijazyčné připomínání (Schvalování designu)",
         "badge": "Úspora 10+ hodin manažera / měsíc",
-        "description": "Automatizované flow v Power Automate, které samo hlídá schvalovací lhůty, rozpozná jazyk klienta (CZ/EN) a připraví koncept urgence. Řeší i případy jako automatické odpovědi o dovolené.",
+        "description": "Po odeslání návrhu flow v Power Automate založí záznam v SharePointu a hlídá odpověď klienta. Odpověď do 2 minut bere jako automatickou, například o dovolené. Když klient do 7 dnů neodpoví, připraví koncept připomínky v češtině nebo angličtině podle toho, jak byl návrh odeslán. Každý zaměstnanec má vlastní flow.",
         "mail": { "subject": "Dotaz: automatické připomínání schvalování", "body": "Dobrý den,\n\nzaujala mě ukázka automatického připomínání schvalování.\n\nCo schvalujeme a kdo to schvaluje:\nJak dnes hlídáme lhůty:\nV jakých jazycích komunikujeme:\n\nS pozdravem\n" }
       },
       {
@@ -104,7 +104,8 @@
     "custom_software": {
       "title": "Software na míru podle vašeho zadání",
       "description": "Nenašli jste hotový program, který by seděl na váš proces? Postavím aplikaci podle vašeho zadání, od první analýzy až po nasazení a zaškolení. Po úvodní analýze dostanete rozpis prací s cenou a termínem a práva k aplikaci na vás přejdou podle smlouvy.",
-      "cta": "Popsat zadání →"
+      "cta": "Popsat zadání →",
+      "mail": { "subject": "Poptávka: software na míru", "body": "Dobrý den,\n\nmám zájem o software na míru.\n\nCo má aplikace řešit:\nKolik lidí s ní bude pracovat:\nV čem to vedeme dnes (Excel, papír, jiný systém…):\nPoužíváme Microsoft 365, nebo Google:\nDo kdy to potřebujeme:\n\nS pozdravem\n" }
     },
     "contact_form": {
       "name": "Jméno",
@@ -227,7 +228,7 @@
         "view": "b2b",
         "title": "Intelligent Multilingual Reminders (Design Approval)",
         "badge": "Saves 10+ manager hours/month",
-        "description": "An automated Power Automate flow that tracks approval deadlines, detects client language (CZ/EN), and drafts reminder emails. It also handles cases like out-of-office auto-replies.",
+        "description": "After a design is sent, a Power Automate flow creates a SharePoint record and watches for the client's reply. Replies within 2 minutes are treated as automatic, such as out-of-office messages. If the client does not reply within 7 days, it drafts a reminder in Czech or English based on how the design was sent. Each employee has their own flow.",
         "mail": { "subject": "Enquiry: automated approval reminders", "body": "Hello,\n\nI saw your automated approval reminders.\n\nWhat we approve and who approves it:\nHow we track deadlines today:\nWhich languages we communicate in:\n\nKind regards\n" }
       },
       {
@@ -267,7 +268,8 @@
     "custom_software": {
       "title": "Custom Software Built to Your Brief",
       "description": "Can't find off-the-shelf software that fits your process? I build an application to your brief, from the first analysis through deployment and training. After the initial analysis you get a work breakdown with price and timeline, and the rights to the application pass to you under the contract.",
-      "cta": "Describe your project →"
+      "cta": "Describe your project →",
+      "mail": { "subject": "Enquiry: custom software", "body": "Hello,\n\nI am interested in custom software.\n\nWhat the application should do:\nHow many people will use it:\nWhat we use today (Excel, paper, another system…):\nDo we use Microsoft 365 or Google:\nWhen we need it by:\n\nKind regards\n" }
     },
     "contact_form": {
       "name": "Name",
