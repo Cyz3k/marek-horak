@@ -63,7 +63,7 @@
       {
         "view": "b2b",
         "title": "Inteligentní multijazyčné připomínání (Schvalování designu)",
-        "badge": "Úspora 10+ hodin manažera / měsíc",
+        "badge": "Power Automate & SharePoint",
         "description": "Po odeslání návrhu flow v Power Automate založí záznam v SharePointu a hlídá odpověď klienta. Odpověď do 2 minut bere jako automatickou, například o dovolené. Když klient do 7 dnů neodpoví, připraví koncept připomínky v češtině nebo angličtině podle toho, jak byl návrh odeslán. Každý zaměstnanec má vlastní flow.",
         "mail": { "subject": "Dotaz: automatické připomínání schvalování", "body": "Dobrý den,\n\nzaujala mě ukázka automatického připomínání schvalování.\n\nCo schvalujeme a kdo to schvaluje:\nJak dnes hlídáme lhůty:\nV jakých jazycích komunikujeme:\n\nS pozdravem\n" }
       },
@@ -82,22 +82,26 @@
         {
           "icon": "🔍",
           "title": "1. Analýza & Data",
-          "text": "Navrhuji efektivní struktury v SharePointu s ohledem na nulové vícenance za extra licence."
+          "text": "Navrhuji efektivní struktury v SharePointu bez zbytečných nákladů na další licence.",
+          "details": [ "Společně projdeme, jak proces funguje dnes a kde se zdržuje.", "Navrhnu strukturu dat a licenčně nejvýhodnější řešení.", "Dostanete rozpis prací s cenou a termínem." ]
         },
         {
           "icon": "💻",
           "title": "2. Vývoj & Toky",
-          "text": "Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate."
+          "text": "Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate.",
+          "details": [ "Přehledné rozhraní pro každodenní práci.", "Automatizace včetně schvalování a upozornění.", "Toky v solutions pro snadný přenos mezi prostředími." ]
         },
         {
           "icon": "🧪",
           "title": "3. Uživatelské testy",
-          "text": "Aplikace testuji v reálném provozu se zaměstnanci, které osobně zaškolím."
+          "text": "Aplikace testuji v reálném provozu se zaměstnanci, které osobně zaškolím.",
+          "details": [ "Testování s lidmi, kteří budou aplikaci opravdu používat.", "Osobní zaškolení zaměstnanců.", "Zapracování připomínek z provozu." ]
         },
         {
           "icon": "🛠️",
           "title": "4. Ladění & Podpora",
-          "text": "Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba běžících systémů."
+          "text": "Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba běžících systémů.",
+          "details": [ "Rychlé řešení chyb v běžícím provozu.", "Dlouhodobá údržba nasazených systémů.", "Úpravy, když se změní váš proces." ]
         }
       ]
     },
@@ -227,7 +231,7 @@
       {
         "view": "b2b",
         "title": "Intelligent Multilingual Reminders (Design Approval)",
-        "badge": "Saves 10+ manager hours/month",
+        "badge": "Power Automate & SharePoint",
         "description": "After a design is sent, a Power Automate flow creates a SharePoint record and watches for the client's reply. Replies within 2 minutes are treated as automatic, such as out-of-office messages. If the client does not reply within 7 days, it drafts a reminder in Czech or English based on how the design was sent. Each employee has their own flow.",
         "mail": { "subject": "Enquiry: automated approval reminders", "body": "Hello,\n\nI saw your automated approval reminders.\n\nWhat we approve and who approves it:\nHow we track deadlines today:\nWhich languages we communicate in:\n\nKind regards\n" }
       },
@@ -246,22 +250,26 @@
         {
           "icon": "🔍",
           "title": "1. Analysis & Data",
-          "text": "I design efficient structures in SharePoint with a focus on avoiding extra license costs."
+          "text": "I design efficient structures in SharePoint with a focus on avoiding extra license costs.",
+          "details": [ "We go through how the process works today and where it slows down.", "I design the data structure and the most cost-effective licensing.", "You get a work breakdown with price and timeline." ]
         },
         {
           "icon": "💻",
           "title": "2. Development & Flows",
-          "text": "I develop user-friendly interfaces in Power Apps and connect them with automation in Power Automate."
+          "text": "I develop user-friendly interfaces in Power Apps and connect them with automation in Power Automate.",
+          "details": [ "A clear interface for everyday work.", "Automation including approvals and notifications.", "Flows in solutions for easy transfer between environments." ]
         },
         {
           "icon": "🧪",
           "title": "3. User Testing",
-          "text": "I test applications in real-world scenarios with employees whom I personally train."
+          "text": "I test applications in real-world scenarios with employees whom I personally train.",
+          "details": [ "Testing with the people who will actually use the application.", "Personal training for employees.", "Feedback from real use is built in." ]
         },
         {
           "icon": "🛠️",
           "title": "4. Debugging & Support",
-          "text": "Immediate debugging and long-term maintenance of running systems are a matter of course for me."
+          "text": "Immediate debugging and long-term maintenance of running systems are a matter of course for me.",
+          "details": [ "Fast fixes in the running system.", "Long-term maintenance of deployed systems.", "Changes when your process changes." ]
         }
       ]
     },
