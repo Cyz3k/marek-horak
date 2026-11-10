@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marek Horák | M365 Automation Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
     <link rel="icon" type="image/png" href="Pictures/logo-mh-kulate.png">
     <link rel="apple-touch-icon" href="Pictures/logo-mh-kulate.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        html { scroll-padding-top: 5rem; }
         body { font-family: 'Montserrat', sans-serif; }
         .step-panel { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows 0.25s ease, visibility 0.25s; }
         .step-open .step-panel { grid-template-rows: 1fr; visibility: visible; }
@@ -21,9 +23,10 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <div class="max-w-5xl mx-auto px-6 pt-4 flex items-center gap-3">
-        <a href="./" class="mr-auto transition transform hover:scale-105" title="Marek Horák – úvod">
-            <img src="Pictures/logo-mh-kulate.png" alt="Logo MH – Marek Horák" class="w-12 h-12 rounded-full shadow-md">
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-6 py-2.5 flex items-center gap-3">
+        <a href="./" class="mr-auto" title="Marek Horák – úvod">
+            <img src="Pictures/logo-mh-jmeno.png" alt="Marek Horák – Aplikace a automatizace v Microsoft 365" class="h-9 md:h-11 w-auto">
         </a>
         <button id="lang-cz" onclick="switchLanguage('cz')" class="w-10 h-10 rounded-full bg-white border-2 border-blue-600 shadow-md transition transform hover:scale-110 overflow-hidden flex items-center justify-center p-0">
             <img src="https://flagcdn.com/w40/cz.png" alt="CZ" class="w-full h-full object-cover">
@@ -32,6 +35,7 @@
             <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="w-full h-full object-cover">
         </button>
     </div>
+    </header>
 
     <section class="max-w-5xl mx-auto px-6 pt-8 md:pt-12 pb-8">
         <div class="flex flex-col md:flex-row items-center justify-between gap-12 mb-12">
@@ -172,13 +176,13 @@
 
             <div id="footer-contacts-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-lg md:text-xl font-bold text-gray-800 max-w-4xl mx-auto items-center justify-center">
                 <div class="flex justify-center">
-                    <a id="footer-email-link" href="mailto:info@marekhorak.cz" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">📧 info@marekhorak.cz</a>
+                    <a id="footer-email-link" href="mailto:info@marekhorak.cz" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap"><i data-lucide="mail" class="w-5 h-5 text-blue-600"></i> info@marekhorak.cz</a>
                 </div>
                 <div class="flex justify-center">
-                    <a href="tel:+420777212182" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">📞 +420 777 212 182</a>
+                    <a href="tel:+420777212182" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap"><i data-lucide="phone" class="w-5 h-5 text-blue-600"></i> +420 777 212 182</a>
                 </div>
                 <div class="flex justify-center">
-                    <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap">🔗 LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/marek-hor%C3%A1k-a44666151/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap"><i data-lucide="linkedin" class="w-5 h-5 text-blue-600"></i> LinkedIn</a>
                 </div>
             </div>
 
@@ -267,6 +271,7 @@
                 const allContent = await response.json();
                 const content = allContent[lang];
                 renderContent(content, view);
+                if (window.lucide) lucide.createIcons();
             } catch (error) {
                 // Log the specific error to the console for better debugging
                 console.error('Nepodařilo se načíst nebo zpracovat obsah. Chyba:', error);
@@ -362,7 +367,7 @@
                         <p class="text-sm text-gray-600">${item.description}</p>
                         <div class="flex flex-wrap gap-x-6 gap-y-2 mt-3">
                             ${item.link ? `<a href="${item.link}" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition">${item.link_text || 'Zobrazit ukázku →'}</a>` : ''}
-                            ${item.mail ? `<a href="${mailtoHref(item.mail)}" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition">${content.footer.project_mail_text}</a>` : ''}
+                            ${item.mail ? `<a href="${mailtoHref(item.mail)}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition"><i data-lucide="mail" class="w-4 h-4"></i>${content.footer.project_mail_text}</a>` : ''}
                         </div>
                     </div>`;
             });
@@ -375,7 +380,7 @@
                     <div class="step-item bg-white rounded-xl border shadow-sm transition-colors ${isOpen ? 'step-open border-blue-200' : 'border-gray-100'}">
                         <h3>
                             <button type="button" onclick="setOpenStep(${index})" aria-expanded="${isOpen}" aria-controls="step-panel-${index}" class="w-full flex items-center gap-4 p-5 text-left rounded-xl hover:bg-gray-50 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600">
-                                <span class="text-2xl" aria-hidden="true">${item.icon}</span>
+                                <span class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0" aria-hidden="true"><i data-lucide="${item.icon}" class="w-5 h-5"></i></span>
                                 <span class="flex-1 font-bold text-lg text-gray-900">${item.title}</span>
                                 <svg class="step-chevron w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
@@ -417,7 +422,7 @@
                 content.advanced_integrations.forEach(item => {
                     advContainer.innerHTML += `
                         <div class="flex gap-4 items-start">
-                            <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg text-xl font-bold">${item.icon}</div>
+                            <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg flex-shrink-0" aria-hidden="true"><i data-lucide="${item.icon}" class="w-5 h-5"></i></div>
                             <div>
                                 <h3 class="font-bold text-lg mb-1">${item.title}</h3>
                                 <p class="text-sm text-gray-400">${item.description}</p>

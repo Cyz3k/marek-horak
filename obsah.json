@@ -80,25 +80,25 @@
       "description": "Pomáhám zastřešit celý životní cyklus aplikace tak, aby proces stál minimum lidského úsilí i licenčních poplatků.",
       "items": [
         {
-          "icon": "🔍",
+          "icon": "search",
           "title": "1. Analýza & Data",
           "text": "Navrhuji efektivní struktury v SharePointu bez zbytečných nákladů na další licence.",
           "details": [ "Společně projdeme, jak proces funguje dnes a kde se zdržuje.", "Navrhnu strukturu dat a licenčně nejvýhodnější řešení.", "Dostanete rozpis prací s cenou a termínem." ]
         },
         {
-          "icon": "💻",
+          "icon": "code",
           "title": "2. Vývoj & Toky",
           "text": "Vyvíjím přívětivé rozhraní v Power Apps a propojuji ho s automatizací v Power Automate.",
           "details": [ "Přehledné rozhraní pro každodenní práci.", "Automatizace včetně schvalování a upozornění.", "Toky v solutions pro snadný přenos mezi prostředími." ]
         },
         {
-          "icon": "🧪",
+          "icon": "clipboard-check",
           "title": "3. Uživatelské testy",
           "text": "Aplikace testuji v reálném provozu se zaměstnanci, které osobně zaškolím.",
           "details": [ "Testování s lidmi, kteří budou aplikaci opravdu používat.", "Osobní zaškolení zaměstnanců.", "Zapracování připomínek z provozu." ]
         },
         {
-          "icon": "🛠️",
+          "icon": "wrench",
           "title": "4. Ladění & Podpora",
           "text": "Samozřejmostí je pro mě okamžitý debugging a dlouhodobá údržba běžících systémů.",
           "details": [ "Rychlé řešení chyb v běžícím provozu.", "Dlouhodobá údržba nasazených systémů.", "Úpravy, když se změní váš proces." ]
@@ -127,27 +127,27 @@
     },
     "advanced_integrations": [
       {
-        "icon": "💡",
+        "icon": "layers",
         "title": "Licenčně efektivní architektura",
         "description": "Aplikace stavím na konektorech, které pokrývá licence M365 jednotlivých uživatelů – bez nutnosti dokupovat prémiové licence."
       },
       {
-        "icon": "💰",
+        "icon": "calculator",
         "title": "Výběr licenčního modelu",
         "description": "Spočítám, co se vám vyplatí: Premium na uživatele, licence na proces, nebo platba za spuštění. Zohledním počet uživatelů, četnost běhů i spotřebu AI kreditů."
       },
       {
-        "icon": "📄",
+        "icon": "file-text",
         "title": "Inteligentní vytěžování faktur",
         "description": "Automatizovaný převod PDF faktur do struktur XML/ISDOC za pomoci AI a integrace služby ALICE přes API."
       },
       {
-        "icon": "🌐",
+        "icon": "building-2",
         "title": "Propojování na státní registry",
         "description": "Automatické vyhledávání a načítání firemních dat z registru ARES na základě zadání IČO přímo v aplikaci."
       },
       {
-        "icon": "⚡",
+        "icon": "braces",
         "title": "Pokročilá práce s daty (XPath)",
         "description": "Efektivní transformace komplexních XML struktur přímo v tocích bez nutnosti mezikroků."
       }
@@ -158,7 +158,7 @@
       "description_b2b": "Hledáte externího specialistu na optimalizaci M365 licencí nebo automatizaci procesů? Ozvěte se, probereme zadání.",
       "description_all": "Hledáte do týmu samostatného člověka, nebo externího specialistu na automatizaci? Pojďme se potkat a probrat možnosti.",
       "ico_text": "IČO: 21860785",
-      "project_mail_text": "📧 Chci podobné řešení",
+      "project_mail_text": "Chci podobné řešení",
       "mail": { "subject": "Dotaz z webu marekhorak.cz", "body": "Dobrý den,\n\nobracím se na vás ohledně možné spolupráce:\n\n\nS pozdravem\n" }
     },
     "links": {
@@ -248,25 +248,25 @@
       "description": "I help manage the entire application lifecycle to ensure processes require minimal human effort and licensing fees.",
       "items": [
         {
-          "icon": "🔍",
+          "icon": "search",
           "title": "1. Analysis & Data",
           "text": "I design efficient structures in SharePoint with a focus on avoiding extra license costs.",
           "details": [ "We go through how the process works today and where it slows down.", "I design the data structure and the most cost-effective licensing.", "You get a work breakdown with price and timeline." ]
         },
         {
-          "icon": "💻",
+          "icon": "code",
           "title": "2. Development & Flows",
           "text": "I develop user-friendly interfaces in Power Apps and connect them with automation in Power Automate.",
           "details": [ "A clear interface for everyday work.", "Automation including approvals and notifications.", "Flows in solutions for easy transfer between environments." ]
         },
         {
-          "icon": "🧪",
+          "icon": "clipboard-check",
           "title": "3. User Testing",
           "text": "I test applications in real-world scenarios with employees whom I personally train.",
           "details": [ "Testing with the people who will actually use the application.", "Personal training for employees.", "Feedback from real use is built in." ]
         },
         {
-          "icon": "🛠️",
+          "icon": "wrench",
           "title": "4. Debugging & Support",
           "text": "Immediate debugging and long-term maintenance of running systems are a matter of course for me.",
           "details": [ "Fast fixes in the running system.", "Long-term maintenance of deployed systems.", "Changes when your process changes." ]
@@ -295,27 +295,27 @@
     },
     "advanced_integrations": [
       {
-        "icon": "💡",
+        "icon": "layers",
         "title": "License-Efficient Architecture",
         "description": "I build apps on connectors covered by each user's own M365 license – no need to buy additional premium licenses."
       },
       {
-        "icon": "💰",
+        "icon": "calculator",
         "title": "Choosing the Right License Model",
         "description": "I calculate what pays off for you: Premium per user, a per-process license, or pay-as-you-go per run – based on the number of users, run frequency and AI credit consumption."
       },
       {
-        "icon": "📄",
+        "icon": "file-text",
         "title": "Intelligent Invoice Extraction",
         "description": "Automated conversion of PDF invoices into XML/ISDOC structures using AI and ALICE service integration via API."
       },
       {
-        "icon": "🌐",
+        "icon": "building-2",
         "title": "Connecting to State Registries",
         "description": "Automatic search and retrieval of company data from the ARES registry based on VAT ID input directly in the application."
       },
       {
-        "icon": "⚡",
+        "icon": "braces",
         "title": "Advanced Data Handling (XPath)",
         "description": "Efficient transformation of complex XML structures directly in flows without intermediate steps."
       }
@@ -326,7 +326,7 @@
       "description_b2b": "Looking for an external specialist for M365 license optimization or process automation? Get in touch to discuss your needs.",
       "description_all": "Looking for a full-time team member or an external specialist for automation? Let's connect and discuss the possibilities.",
       "ico_text": "Company ID (IČO): 21860785",
-      "project_mail_text": "📧 I want something similar",
+      "project_mail_text": "I want something similar",
       "mail": { "subject": "Enquiry from marekhorak.cz", "body": "Hello,\n\nI am contacting you about a possible cooperation:\n\n\nKind regards\n" }
     },
     "links": {
