@@ -121,6 +121,49 @@
       "error": "Zprávu se nepodařilo odeslat. Napište mi prosím přímo na info@marekhorak.cz.",
       "privacy": "Jméno, e-mail a zprávu použije Marek Horák (IČO 21860785) jen k vyřízení vašeho dotazu a uchová je jen po dobu nezbytnou k jeho vyřízení. Zpráva se doručuje přes službu Google. Opravu nebo smazání údajů si můžete vyžádat na info@marekhorak.cz."
     },
+    "hero_cta": {
+      "main": "Popsat zadání",
+      "projects": "Ukázky práce"
+    },
+    "stats": [
+      {
+        "value": "7 divizí",
+        "label": "Docházkový systém nasazený napříč celou společností"
+      },
+      {
+        "value": "2 platformy",
+        "label": "Microsoft 365 i Google Workspace"
+      },
+      {
+        "value": "1 člověk",
+        "label": "Od analýzy přes vývoj až po podporu"
+      }
+    ],
+    "faq": {
+      "title": "Časté dotazy",
+      "items": [
+        {
+          "q": "Komu patří hotová aplikace?",
+          "a": "U aplikace na míru přecházejí práva na vás podle smlouvy. U hotových řešení, jako je Provozník, dostáváte licenci k používání."
+        },
+        {
+          "q": "Kolik to bude stát?",
+          "a": "Záleží na rozsahu. Po úvodní analýze dostanete rozpis prací s cenou a termínem. Práce nad rámec domluveného rozsahu se účtují hodinovou sazbou."
+        },
+        {
+          "q": "Budeme muset dokupovat licence?",
+          "a": "Většinu řešení navrhuji tak, aby vystačila s licencemi Microsoft 365 nebo Google Workspace, které už máte. Pokud je prémiová funkce nutná, předem vám spočítám nejvýhodnější licenční model."
+        },
+        {
+          "q": "Kde budou naše data?",
+          "a": "Ve vašem prostředí Microsoft 365 nebo Google Workspace. Pokud řešení využívá externí službu, například pro vytěžování faktur, předem vám řeknu, jaká data do ní posílá."
+        },
+        {
+          "q": "Co když bude potřeba oprava nebo změna?",
+          "a": "Chyby i úpravy řeším i po předání. Rozsah podpory si domluvíme ve smlouvě."
+        }
+      ]
+    },
     "focus": {
       "title": "Pokročilé integrace & Optimalizace nákladů",
       "description": "Řešení, která se často staví na drahých prémiových licencích, navrhuji tak, aby vystačila se standardními konektory v rámci licencí M365, které už ve firmě máte."
@@ -288,6 +331,49 @@
       "success": "Thank you, your message has been sent. I'll get back to you as soon as possible.",
       "error": "The message could not be sent. Please write to me directly at info@marekhorak.cz.",
       "privacy": "Your name, email and message are used by Marek Horák (Company ID 21860785) only to handle your enquiry and are kept only as long as needed for that. The message is delivered via Google. You can request correction or deletion of your data at info@marekhorak.cz."
+    },
+    "hero_cta": {
+      "main": "Describe your project",
+      "projects": "See my work"
+    },
+    "stats": [
+      {
+        "value": "7 divisions",
+        "label": "Attendance system rolled out across the whole company"
+      },
+      {
+        "value": "2 platforms",
+        "label": "Microsoft 365 and Google Workspace"
+      },
+      {
+        "value": "1 person",
+        "label": "From analysis through development to support"
+      }
+    ],
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Who owns the finished application?",
+          "a": "For custom applications, the rights pass to you under the contract. For ready-made solutions such as Provozník, you get a licence to use it."
+        },
+        {
+          "q": "How much will it cost?",
+          "a": "It depends on the scope. After the initial analysis you get a work breakdown with price and timeline. Work beyond the agreed scope is billed at an hourly rate."
+        },
+        {
+          "q": "Will we need to buy extra licences?",
+          "a": "I design most solutions to work with the Microsoft 365 or Google Workspace licences you already have. If a premium feature is needed, I calculate the most cost-effective licensing model in advance."
+        },
+        {
+          "q": "Where will our data be stored?",
+          "a": "In your own Microsoft 365 or Google Workspace environment. If a solution uses an external service, for example for invoice extraction, I tell you in advance what data it sends there."
+        },
+        {
+          "q": "What if we need a fix or a change?",
+          "a": "I handle bugs and changes after handover too. We agree the scope of support in the contract."
+        }
+      ]
     },
     "focus": {
       "title": "Advanced Integrations & Cost Optimization",
