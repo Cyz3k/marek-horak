@@ -109,7 +109,7 @@
       "title": "Software na míru podle vašeho zadání",
       "description": "Nenašli jste hotový program, který by seděl na váš proces? Postavím aplikaci podle vašeho zadání, od první analýzy až po nasazení a zaškolení. Po úvodní analýze dostanete rozpis prací s cenou a termínem a práva k aplikaci na vás přejdou podle smlouvy.",
       "cta": "Popsat zadání →",
-      "mail": { "subject": "Poptávka: software na míru", "body": "Dobrý den,\n\nmám zájem o software na míru.\n\nCo má aplikace řešit:\nKolik lidí s ní bude pracovat:\nV čem to vedeme dnes (Excel, papír, jiný systém…):\nPoužíváme Microsoft 365, nebo Google:\nDo kdy to potřebujeme:\n\nS pozdravem\n" }
+      "mail": { "subject": "Poptávka: software na míru", "body": "Dobrý den,\n\nmám zájem o software na míru.\n\nCo má aplikace řešit:\nKolik lidí s ní bude pracovat:\nV čem to vedeme dnes (Excel, papír, jiný systém…):\nPoužíváme Microsoft 365 (ano/ne):\nDo kdy to potřebujeme:\n\nS pozdravem\n" }
     },
     "contact_form": {
       "name": "Jméno",
@@ -120,6 +120,10 @@
       "success": "Děkuji, zpráva je odeslaná. Ozvu se vám co nejdříve.",
       "error": "Zprávu se nepodařilo odeslat. Napište mi prosím přímo na info@marekhorak.cz.",
       "privacy": "Jméno, e-mail a zprávu použije Marek Horák (IČO 21860785) jen k vyřízení vašeho dotazu a uchová je jen po dobu nezbytnou k jeho vyřízení. Zpráva se doručuje přes službu Google. Opravu nebo smazání údajů si můžete vyžádat na info@marekhorak.cz."
+    },
+    "hero_cta": {
+      "main": "Popsat zadání",
+      "projects": "Ukázky práce"
     },
     "focus": {
       "title": "Pokročilé integrace & Optimalizace nákladů",
@@ -277,7 +281,7 @@
       "title": "Custom Software Built to Your Brief",
       "description": "Can't find off-the-shelf software that fits your process? I build an application to your brief, from the first analysis through deployment and training. After the initial analysis you get a work breakdown with price and timeline, and the rights to the application pass to you under the contract.",
       "cta": "Describe your project →",
-      "mail": { "subject": "Enquiry: custom software", "body": "Hello,\n\nI am interested in custom software.\n\nWhat the application should do:\nHow many people will use it:\nWhat we use today (Excel, paper, another system…):\nDo we use Microsoft 365 or Google:\nWhen we need it by:\n\nKind regards\n" }
+      "mail": { "subject": "Enquiry: custom software", "body": "Hello,\n\nI am interested in custom software.\n\nWhat the application should do:\nHow many people will use it:\nWhat we use today (Excel, paper, another system…):\nDo we use Microsoft 365 (yes/no):\nWhen we need it by:\n\nKind regards\n" }
     },
     "contact_form": {
       "name": "Name",
@@ -288,6 +292,10 @@
       "success": "Thank you, your message has been sent. I'll get back to you as soon as possible.",
       "error": "The message could not be sent. Please write to me directly at info@marekhorak.cz.",
       "privacy": "Your name, email and message are used by Marek Horák (Company ID 21860785) only to handle your enquiry and are kept only as long as needed for that. The message is delivered via Google. You can request correction or deletion of your data at info@marekhorak.cz."
+    },
+    "hero_cta": {
+      "main": "Describe your project",
+      "projects": "See my work"
     },
     "focus": {
       "title": "Advanced Integrations & Cost Optimization",
